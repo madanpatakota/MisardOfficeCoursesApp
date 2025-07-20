@@ -1,0 +1,59 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow sticky-top px-0"> <div class="container-fluid px-2">
+  <a class="navbar-brand d-flex align-items-center fw-bold text-primary fs-4 me-auto" (click)="closeNavbar()"
+    routerLink="/">
+    <img src="../../assets/images/favicon.png" alt="Misard Logo" class="img-fluid me-2" style="height: 36px;" />
+    Misard Academy
+  </a>
+
+<button class="custom-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="bar"></span>
+  <span class="bar"></span>
+  <span class="bar"></span>
+</button>
+
+
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-3">
+        <li class="nav-item">
+          <a class="nav-link fw-semibold text-dark"(click)="closeNavbar()" routerLink="/">Home</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle fw-semibold text-dark" href="#" id="articlesDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Articles
+          </a>
+          <ul class="dropdown-menu shadow" aria-labelledby="articlesDropdown">
+            <li><a class="dropdown-item" [routerLink]="'articles/javascript-articles'">JavaScript</a></li>
+            <li><a class="dropdown-item" [routerLink]="'articles/html-articles'">HTML</a></li>
+            <li><a class="dropdown-item" [routerLink]="'articles/angular-articles'">Angular</a></li>
+            <li><a class="dropdown-item" [routerLink]="'articles/csharp-articles'">C#</a></li>
+            <li><a class="dropdown-item" [routerLink]="'courses/aspnetcore-articles'">ASP.NET Core</a></li>
+            <li><a class="dropdown-item" [routerLink]="'courses/typescript-articles'">TypeScript</a></li>
+            <li><a class="dropdown-item">Entity Framework</a></li>
+            <li><a class="dropdown-item">LINQ</a></li>
+            <li><a class="dropdown-item">OOPS</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link fw-semibold text-dark"(click)="closeNavbar()" routerLink="courses">Courses</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link fw-semibold text-dark"(click)="closeNavbar()" routerLink="projects">Projects</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link fw-semibold text-dark"(click)="closeNavbar()" routerLink="iqs">InterviewQ&A</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link fw-bold text-primary"(click)="closeNavbar()" routerLink="/netcore-index.html">Meet your mentor</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

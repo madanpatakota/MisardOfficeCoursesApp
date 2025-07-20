@@ -1,0 +1,40 @@
+/* Ensure the card-text stays limited to 2 lines */
+.text-truncate-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limit text to 2 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  /* Make the images have a uniform height and width */
+  .fixed-image {
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    width: 100%; /* Set width to 100% of the card */
+  }
+  
+
+  .project-link {
+    color: rgb(20, 65, 100) !important; /* Custom color */
+    text-decoration: none;
+  }
+  
+  .project-link:hover {
+    text-decoration: underline;
+    color: rgb(20, 65, 100) !important; /* Maintain the color on hover */
+  }
+
+
+.card-footer .text-muted {
+  font-size: 0.875rem; /* Slightly smaller font size */
+  margin: 0; /* Remove default margin */
+}
+
+.card-footer i {
+  color: #6c757d; /* Gray color for icons */
+}
+
+.card-footer .text-muted i {
+  margin-right: 5px; /* Space between icon and text */
+}

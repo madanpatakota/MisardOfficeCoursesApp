@@ -1,0 +1,141 @@
+<div class="container py-5">
+
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb" data-aos="fade-down">
+        <ol class="breadcrumb"  >
+            <li class="breadcrumb-item"><a [routerLink]="['/']">Home</a></li>
+            <li class="breadcrumb-item"><a [routerLink]="['/courses']">Courses</a></li>
+            <li class="breadcrumb-item active" aria-current="page">JavaScript Training</li>
+        </ol>
+    </nav>
+
+    <!-- Heading -->
+    <h1 class="fw-bold mb-5 text-primary" data-aos="fade-up">JavaScript Training</h1>
+
+    <!-- Course Overview -->
+    <div class="section-card" data-aos="fade-up">
+        <h2 class="section-title">Course Overview</h2>
+        <p>
+            This JavaScript course is designed to guide beginners through a structured journey into one of the most
+            essential web technologies.
+            From fundamentals like variables and data types to advanced concepts like asynchronous programming and
+            modules, this course prepares
+            students to confidently write interactive and modern JavaScript applications.
+        </p>
+    </div>
+
+    <!-- About Trainer -->
+    <div class="section-card" data-aos="fade-up" data-aos-delay="100">
+        <h2 class="section-title">About the Trainer</h2>
+        <p>
+            Madan Patakota is an experienced full-stack developer and passionate trainer with over a decade of industry
+            experience. Having delivered
+            numerous enterprise-grade applications in telecom, real estate, insurance, and marketing sectors, he blends
+            real-world expertise with
+            a passion for teaching.
+        </p>
+        <p>
+            Madan specializes in JavaScript, Angular, .NET Core, SQL Server, and Azure, and has mentored hundreds of
+            learners with a hands-on,
+            real-project approach. His sessions focus on building not just skills, but also confidence and career
+            clarity for aspiring developers.
+        </p>
+    </div>
+
+    <!-- Course Content -->
+    <div class="section-card" data-aos="fade-up" data-aos-delay="200">
+        <h2 class="section-title">Course Content</h2>
+        <ul class="list-unstyled">
+            <li *ngFor="let topic of courseTopics" class="list-point">
+                <i class="fas fa-check-circle me-2 text-success"></i>
+                <strong>{{ topic.session }}</strong> — {{ topic.details }}
+            </li>
+        </ul>
+    </div>
+
+    <!-- What You Will Learn -->
+    <div class="section-card" data-aos="fade-up" data-aos-delay="300">
+        <h2 class="section-title">What You Will Learn</h2>
+        <ul class="feature-list">
+            <li>✔️ Master JavaScript fundamentals with hands-on examples.</li>
+            <li>✔️ Learn how to use functions, scopes, and return types effectively.</li>
+            <li>✔️ Understand callback, promise, and async/await approaches.</li>
+            <li>✔️ Grasp the power of 'this', execution context, and closures.</li>
+            <li>✔️ Work with arrays, objects, loops, and conditions fluently.</li>
+            <li>✔️ Implement debugging and logging techniques with dev tools.</li>
+            <li>✔️ Explore advanced topics like classes, inheritance, and prototypes.</li>
+            <li>✔️ Learn modular development with import/export syntax.</li>
+            <li>✔️ Handle browser storage and web APIs confidently.</li>
+            <li>✔️ Build a strong JavaScript foundation for frameworks like Angular or React.</li>
+        </ul>
+    </div>
+
+    <!-- JavaScript in IT Market -->
+    <div class="section-card" data-aos="fade-up" data-aos-delay="400">
+        <h2 class="section-title">JavaScript in the IT Market</h2>
+        <p>
+            JavaScript remains the backbone of modern web development and is in high demand across startups,
+            enterprises, and product companies.
+            It powers everything from static websites to advanced single-page applications (SPAs) and serverless
+            architectures.
+        </p>
+        <p>
+            With the rise of frameworks like Angular, React, and Vue — JavaScript is not just a skill, but a superpower
+            in your tech stack. Mastery
+            of JavaScript opens doors to front-end, full-stack, and cloud-based development roles with lucrative career
+            growth.
+        </p>
+        <p>
+            Whether you're preparing for job interviews or aiming to build your own applications, JavaScript proficiency
+            puts you ahead in today’s tech-driven world.
+        </p>
+    </div>
+
+    <!-- Who Should Learn -->
+    <div class="section-card" data-aos="fade-up" data-aos-delay="500">
+        <h2 class="section-title">Who Should Learn This Course?</h2>
+        <ul class="feature-list">
+            <li>✔️ Anyone new to web development and programming.</li>
+            <li>✔️ B.Tech / B.Sc Computer Science students looking for core JS strength.</li>
+            <li>✔️ Freshers aiming for JavaScript/Angular/React roles.</li>
+            <li>✔️ Working professionals upskilling into frontend development.</li>
+        </ul>
+    </div>
+
+    <!-- Course Videos -->
+    <div class="section-card" data-aos="fade-up" data-aos-delay="600">
+        <h2 class="section-title mb-4">Course Videos</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+            <div class="col-md-4" *ngFor="let video of videos; let i = index">
+                <div class="video-card shadow-sm rounded-4" (click)="openVideo(video.id)" data-aos="zoom-in"
+                    [attr.data-aos-delay]="i * 100">
+                    <img [src]="video.thumbnail" class="card-img-top" [alt]="video.title">
+                    <div class="card-body text-center">
+                        <h5 class="video-footer bg-light text-center py-2">{{ video.title }}</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Scroll to Top Button -->
+<button class="scroll-top" title="Scroll to top" (click)="scrollToTop()">
+    ⬆
+</button>
+
+<!-- Video Modal -->
+<div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content rounded-4">
+            <div class="modal-header">
+                <h5 class="modal-title">Watch Video</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" (click)="closeVideo()"></button>
+            </div>
+            <div class="modal-body p-0">
+                <iframe id="youtubeFrame" width="100%" height="500px" frameborder="0" allowfullscreen
+                    class="rounded-bottom-4"></iframe>
+            </div>
+        </div>
+    </div>
+</div>

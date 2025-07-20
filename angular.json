@@ -20,14 +20,24 @@
               "zone.js"
             ],
             "tsConfig": "tsconfig.app.json",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
+           "assets": ["src/favicon.ico", "src/assets" , "src/staticwebapp.config.json"],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/prismjs/themes/prism.css",
+              "node_modules/aos/dist/aos.css",
+              "node_modules/bootstrap-icons/font/bootstrap-icons.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.js",
+              "node_modules/prismjs/prism.js",
+              "node_modules/aos/dist/aos.js"           
+          ],
+           "allowedCommonJsDependencies": [
+      "prismjs",
+      "sweetalert2",
+      "aos"
+    ]
           },
           "configurations": {
             "production": {
@@ -39,8 +49,8 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "8kb",
+                  "maximumError": "8kb"
                 }
               ],
               "outputHashing": "all"
@@ -94,5 +104,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

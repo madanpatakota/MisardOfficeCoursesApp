@@ -1,0 +1,108 @@
+/* Main Navbar Background and Shadow */
+.navbar {
+  background-color: #144164 !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar Brand Title */
+.navbar .navbar-brand {
+  color: #ffffff !important;
+  font-weight: bold;
+  font-size: 1.3rem;
+  transition: color 0.3s;
+}
+
+.navbar .navbar-brand:hover {
+  color: #ffffff !important;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+}
+
+/* Navbar Links */
+.navbar .nav-link {
+  color: #ffffff !important;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+/* Active Link (Meet Your Mentor) */
+.navbar .nav-link.text-primary {
+  color: #ffe600 !important;
+  font-weight: 600;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+.dropdown-item {
+  color: #144164 !important;
+  font-weight: 500;
+  padding: 10px 18px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-item:hover {
+  background-color: #144164 !important;
+  color: white !important;
+  text-decoration: none;
+}
+
+/* Navbar Toggler (Mobile) */
+.navbar-toggler {
+  border: none;
+  /* background-color: #ffffff; */
+  padding: 6px 10px;
+  border-radius: 6px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+.custom-toggler {
+  width: 36px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: none;
+  background: transparent;
+  padding: 0;
+  z-index: 1051;
+
+}
+
+.custom-toggler .bar {
+  height: 4px;
+  width: 80%;
+  background-color: #ffffff;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+
+.custom-toggler:hover .bar {
+  background-color: #0a58ca;
+}
+
+/* Hide the toggler button on large screens and above */
+@media (min-width: 992px) {
+  .custom-toggler {
+    display: none !important;
+  }
+}
+

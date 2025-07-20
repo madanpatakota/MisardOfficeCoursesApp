@@ -1,0 +1,48 @@
+<!-- <div class="container mt-4">
+  <div class="card">
+    <div class="">
+      <h5 class="card-title">{{ item.TopicName }}</h5>
+      <p>{{ item.Description }}</p>
+      <pre><code class="language-javascript">{{item.Content}}</code></pre>
+    </div>
+  </div>
+</div> -->
+
+<div class="container mt-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">{{ item.TopicName }}</h5>
+        <p class="card-text">{{ item.Description }}</p>
+  
+        <div class="mt-4">
+          <h6>What is a JavaScript Function?</h6>
+          <p>
+            JavaScript functions are blocks of code designed to perform specific tasks. They allow you to encapsulate reusable logic.
+          </p>
+        </div>
+  
+        <div class="mt-4">
+          <h6>Function Syntax</h6>
+          <!-- <p>
+            A JavaScript function is defined with the <code>function</code> keyword, followed by a name, parentheses <code>()</code>, and a block of code <code>{}</code>.
+          </p> -->
+          <pre><code class="language-javascript">{{ item.Content }}</code></pre>
+        </div>
+  
+        <div class="mt-4">
+          <h6>How to Call a Function</h6>
+          <p>
+            Functions are called by using their name followed by parentheses. You can pass arguments inside the parentheses if needed.
+          </p>
+          <!-- <pre><code class="language-javascript">{{ item.Content2 }}</code></pre> -->
+        </div>
+  
+        <footer class="mt-4">
+          <p class="text-muted">Created by: {{ item.CreatedBy }}</p>
+          <p class="text-muted">Created on: {{ item.CreatedDate }}</p>
+        </footer>
+      </div>
+    </div>
+</div>
+  
+  

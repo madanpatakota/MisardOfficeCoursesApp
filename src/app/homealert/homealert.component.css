@@ -1,0 +1,79 @@
+/* alert-message.component.css */
+
+/* Ensure the body and html take up the full viewport height */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+:host {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    width: 100%;
+}
+
+/* Container for centering the alert */
+#alert-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    width: 100%; /* Full width of the host element */
+}
+
+/* Styling for the alert box */
+.alert {
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    padding: 20px;
+    position: relative;
+    max-width: 90%;
+    width: 500px; /* Adjust width as needed */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.alert-content {
+    font-family: Arial, sans-serif;
+}
+
+.alert-heading {
+    font-size: 20px;
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.alert-body {
+    color: #343a40;
+}
+
+.alert-text {
+    margin-bottom: 10px;
+}
+
+.alert-footer {
+    text-align: right;
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+.btn-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 16px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.btn-close:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,59 @@
+<div class="container py-5">
+
+  <h2 class="fw-bold mb-5" style="color: #144164; font-size: 32px; text-align: left;">
+    Explore Our Training Courses
+  </h2>
+
+  <div class="row g-4">
+    <div class="col-md-4" *ngFor="let course of courses; let i = index">
+      <div class="card course-card shadow-lg rounded-4 h-100 border-0" data-aos="fade-up"
+        [attr.data-aos-delay]="i * 150" data-aos-easing="ease-in-out" data-aos-duration="800">
+
+        <a>
+          <img [src]="course.image" class="card-img-top rounded-top-4 course-image" [alt]="course.title" />
+        </a>
+
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title fw-bold text-center mb-3">{{ course.title }}</h5>
+
+          <p class="card-text text-muted small text-center mb-4">{{ course.description }}</p>
+
+        <ul class="list-unstyled mb-4">
+          <li class="feature-point" *ngIf="course.hasIndex">
+            <a [routerLink]="course.indexlink" class="feature-link">
+              <i class="fas fa-book-open me-2 text-primary"></i> Course Index
+            </a>
+          </li>
+          <li class="feature-point" *ngIf="course.hasVideos">
+            <a [routerLink]="course.MainLink" class="feature-link">
+              <i class="fas fa-play-circle me-2 text-primary"></i> Course Videos
+            </a>
+          </li>
+          <li class="feature-point" *ngIf="course.hasIQ">
+            <span class="feature-link">
+              <i class="fas fa-question-circle me-2 text-primary"></i> Interview Q&A
+            </span>
+          </li>
+          <li class="feature-point" *ngIf="course.hasAssignments">
+            <span class="feature-link">
+              <i class="fas fa-tasks me-2 text-primary"></i> Assignments
+            </span>
+          </li>
+        </ul>
+
+
+
+          <div class="mt-auto text-center">
+            <a class="btn explore-btn w-100" [routerLink]="course.MainLink">
+              Explore Course
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<router-outlet></router-outlet>

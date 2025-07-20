@@ -1,0 +1,9 @@
+
+1. To add the web.config file into the project 
+
+Go to the DeploymentCenter -> AdvancedTools ->Go  -> it willopen the KuduPlus -> window nothing but enviroment of the project
+
+Got to hte debugconsole click on cmd  -> and then go to the Site and and add the web.config file
+
+
+after that restart(overview of the webapplication.) the application

@@ -1,0 +1,418 @@
+/* Card Container */
+.section-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 30px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 12px rgba(20, 65, 100, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.section-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(20, 65, 100, 0.3);
+}
+
+/* Section Headings */
+.section-title {
+  color: #144164;
+  font-weight: bold;
+  margin-bottom: 20px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.section-title:hover {
+  color: #0a58ca;
+  transform: scale(1.05);
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+/* Paragraph Text */
+.section-card p {
+  color: #555;
+  font-size: 16px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.section-card p:hover {
+  color: #333;
+  transform: scale(1.02);
+}
+
+/* List Points */
+.list-point, .feature-list li {
+  font-size: 16px;
+  color: #444;
+  padding: 8px 0;
+  transition: background-color 0.3s, transform 0.3s;
+  border-radius: 8px;
+  padding-left: 10px;
+}
+
+.list-point:hover, .feature-list li:hover {
+  background-color: #f0f7fc;
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+/* Icons inside list */
+.list-point i, .feature-list li::before {
+  color: #144164;
+}
+
+/* Video Cards */
+.video-card {
+  background: #ffffff;
+  cursor: pointer;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.4s, box-shadow 0.4s;
+  box-shadow: 0 4px 8px rgba(20, 65, 100, 0.15);
+}
+
+.video-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 10px 20px rgba(20, 65, 100, 0.3);
+}
+
+/* Image Zoom on Hover */
+.video-card img {
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.video-card:hover img {
+  transform: scale(1.1);
+}
+
+
+.bg-dark-blue {
+  background-color: #0b2b58;
+  color: white;
+}
+
+.video-header {
+  height: 120px;
+  padding: 15px;
+}
+
+.video-thumb {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.video-card .card-body {
+  padding: 10px; /* top, right, bottom, left */
+}
+
+.video-card .card-title {
+  margin-top: 4px; /* Reduce top margin */
+  margin-bottom: 0px; /* Remove bottom margin pushing text down */
+  font-size: 15px;
+  line-height: 1.3;
+}
+
+.video-card:hover .video-thumb {
+  transform: scale(1.05);
+}
+
+.video-footer .badge {
+  font-size: 14px;
+  padding: 6px 14px;
+}
+
+.video-card:hover .badge {
+  background-color: #0a58ca;
+}
+
+.video-footer {
+  padding: 6px 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #144164;
+}
+
+/* .video-card .badge {
+  font-size: 0.75rem;
+  padding: 6px 16px;
+} */
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .video-card {
+    border-radius: 12px;
+  }
+
+  .video-card .card-body {
+    padding: 10px 8px;
+  }
+
+  .video-card .card-title {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .video-footer {
+    padding: 4px 0;
+    font-size: 13px;
+  }
+
+  .video-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 12px;
+  }
+
+  .video-header img {
+    margin-top: 8px;
+    width: 30px;
+  }
+
+  .video-thumb {
+    height: 160px;
+  }
+}
+
+
+ul {
+  list-style: none; /* Remove the default dots */
+  padding-left: 0;  /* Optional: removes extra left padding */
+}
+
+.feature-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.feature-list li {
+  margin-bottom: 6px; /* smaller gap between points */
+  font-size: 16px;
+  color: #444;
+  transition: background-color 0.3s, transform 0.3s;
+  border-radius: 8px;
+  padding-left: 10px;
+}
+
+.feature-list li::before {
+  /* content: "✔️"; */
+  margin-right: 8px;
+  color: #144164;
+  font-size: 18px;
+}
+
+/* Hover Effect */
+.feature-list li:hover {
+  background-color: #f0f7fc;
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+.video-card .card-title {
+  margin-top: 12px;
+  font-size: 16px;
+  color: #144164;
+  font-weight: 600;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.video-card:hover .card-title {
+  color: #0a58ca;
+  text-shadow: 0px 0px 6px rgba(20, 65, 100, 0.4);
+}
+
+/* Existing CSS will be loaded here by the assistant. */
+
+/* Enhanced Responsive Tweaks */
+@media (max-width: 576px) {
+  .section-card {
+    padding: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  .video-card .card-title,
+  .accordion-button span,
+  .video-lesson-item,
+  .feature-list li {
+    font-size: 14px !important;
+  }
+
+  .accordion-button {
+    padding: 0.75rem 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .accordion-button .badge {
+    margin-top: 0.5rem;
+  }
+
+  .modal-body iframe {
+    height: 250px !important;
+  }
+  
+   .btn-outline-primary {
+    padding: 4px 8px !important;
+    font-size: 13px !important;
+    line-height: 1.2 !important;
+  }
+}
+
+/* Modal lesson list styling */
+.lesson-item {
+  transition: background-color 0.3s, transform 0.3s;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 15px;
+  color: #333;
+  padding: 10px 12px;
+  border-radius: 6px;
+}
+
+.lesson-item:hover {
+  background-color: #f0f7fc;
+  transform: scale(1.02);
+  color: #144164;
+}
+/* 
+.chapter-description {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.5;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.chapter-description:hover {
+  transform: scale(1.02);
+  color: #144164;
+}
+
+ */
+
+/* Accordion Styling */
+.accordion-button {
+  background-color: #144164;
+  color: white;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #144164;
+  color: white;
+  box-shadow: none;
+}
+
+.accordion-button:focus {
+  box-shadow: 0 0 0 0.25rem rgba(20, 65, 100, 0.25);
+}
+
+.accordion-body {
+  background-color: #f8f9fc;
+  color: #333;
+}
+
+.accordion-item {
+  border-radius: 0.75rem;
+  border: 1px solid #dee2e6;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+
+.video-lesson-item {
+  font-size: 15px;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
+}
+
+.video-lesson-item:hover {
+  background-color: #e9f1fa;
+  cursor: pointer;
+}
+
+.video-lesson-item i {
+  font-size: 16px;
+  color: #28a745;
+}
+
+.btn-outline-primary {
+  border-color: #144164;
+  color: #144164;
+  font-size: 14px;
+  padding: 4px 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+  background-color: #144164;
+  color: white;
+}
+
+/* Modal Styling */
+.modal-content {
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.modal-header {
+  background-color: #144164;
+  color: white;
+}
+
+.modal-body iframe {
+  border: 4px solid #144164;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+/* Section title */
+.section-title {
+  color: #144164;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.section-card {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(20, 65, 100, 0.2);
+}
+
+/* White accordion arrow icon */
+.accordion-button::after {
+  filter: brightness(0) invert(1); /* Converts the black chevron to white */
+}
+
+/* Optional: When accordion is expanded */
+.accordion-button:not(.collapsed)::after {
+  filter: brightness(0) invert(1);
+}
+
+.chapter-description {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.5;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.chapter-description:hover {
+  transform: scale(1.02);
+  color: #144164;
+}

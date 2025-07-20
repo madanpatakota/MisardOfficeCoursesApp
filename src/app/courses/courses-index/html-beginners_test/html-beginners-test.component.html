@@ -1,0 +1,64 @@
+<div class="container py-5">
+
+    <!-- Page Heading -->
+    <h2 class="fw-bold mb-4" style="color: #144164; font-size: 32px; text-align: left;">
+        HTML Beginners in Telugu
+    </h2>
+
+    <!-- Cards Row -->
+    <div class="row g-4">
+        <div class="col-md-4" *ngFor="let video of videos; let i = index">
+            <div class="card shadow-lg rounded-4 h-100 border-0" (click)="openVideo(video.id)"
+                style="cursor: pointer; overflow: hidden; transition: transform 0.3s;" data-aos="fade-up"
+                [attr.data-aos-delay]="i * 150" data-aos-easing="ease-in-out" data-aos-duration="800">
+
+                <div class="overflow-hidden">
+                    <img src = "../../../assets/images/HTMLSlides/Part1.png"
+                        class="card-img-top rounded-top-4 hover-zoom" alt="{{video.title}}">
+                </div>
+
+                <div class="card-body">
+                    <h5 class="card-title fw-bold text-center">{{video.title}}</h5>
+
+                    <ul class="list-unstyled mt-3" data-aos="fade-left" data-aos-delay="300" data-aos-duration="800">
+                        <li class="description-item d-flex align-items-start mb-2" *ngFor="let point of video.points">
+                            <span class="me-2 highlight-icon">&#10003;</span>
+                            {{point}}
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" (click)="scrollToTop()" *ngIf="showScrollButton">
+        ↑
+    </button>
+
+
+</div>
+
+
+<!-- Bootstrap Modal for Video -->
+<div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content rounded-4">
+
+            <div class="modal-header">
+                <h5 class="modal-title" id="videoModalLabel">Video Player</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                    (click)="closeVideo()"></button>
+            </div>
+
+            <div class="modal-body p-0">
+                <iframe id="youtubeFrame" width="100%" height="500px" frameborder="0" allowfullscreen
+                    class="rounded-bottom-4">
+                </iframe>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,142 @@
+<!-- ======= Footer ======= -->
+<footer id="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 footer-contact">
+                    <h3>Reach Out</h3>
+                    <p>
+                        S-211, 1st Floor, Ardent Office One<br />
+                        Hoodi Circle, ITPL Road, Bangalore<br />
+                        Karnataka - 560048<br /><br />
+                        <strong>Phone:</strong> +91-72041 85064<br />
+                        <strong>Email:</strong> <a href="mailto:madan&#64;misard.com">madan&#64;misard.com</a><br />
+                    </p>
+                </div>
+
+                <div class="col-lg-2 col-md-6 footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><i class="bx bx-chevron-right"></i> <a [routerLink]="'../../user/dashboard'">Home</a></li>
+                        <li>
+                            <i class="bx bx-chevron-right"></i> <a [routerLink]="'../../about'">About us</a>
+                        </li>
+                        <li>
+                            <i class="bx bx-chevron-right"></i> <a
+                                [routerLink]="'../../carriers/currentopenings'">Openings</a>
+                        </li>
+                        <li>
+                            <i class="bx bx-chevron-right"></i>
+                            <a [routerLink]="'../../technologies'">Technologies</a>
+                        </li>
+                        <li>
+                            <i class="bx bx-chevron-right"></i> <a
+                                [routerLink]="'../../resources/articles'">articles</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li>
+                            <i class="bx bx-chevron-right"></i> <a href="#">Web Design</a>
+                        </li>
+                        <li>
+                            <i class="bx bx-chevron-right"></i>
+                            <a href="#">Web Development</a>
+                        </li>
+                        <li>
+                            <i class="bx bx-chevron-right"></i>
+                            <a href="#">Product Management</a>
+                        </li>
+                        <li>
+                            <i class="bx bx-chevron-right"></i> <a href="#">Marketing</a>
+                        </li>
+                        <li>
+                            <i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6 footer-newsletter">
+                    <h4>Join Our Newsletter</h4>
+                    <p>
+                        We're thrilled to invite you to join our newsletter community! By subscribing, you'll gain
+                        access to exclusive updates, special offers, and valuable insights delivered straight to your
+                        inbox.
+                    </p>
+                    <p>
+                        Our newsletter is designed to keep you informed about the latest trends, events, and happenings
+                        in [Your Industry/Field]. Whether you're a seasoned professional or just starting out, there's
+                        something for everyone in our curated content.
+                    </p>
+                    <p>
+                        Don't miss out on the opportunity to be part of our vibrant community. Sign up today and stay
+                        connected with us!
+                    </p>
+                    <form (ngSubmit)="onSubscribe()" #subscribeForm="ngForm"
+                        class="d-flex flex-column flex-sm-row gap-2 align-items-start align-items-sm-center">
+                        <input type="email" class="form-control" name="email" [(ngModel)]="email" required
+                            placeholder="Enter your email" />
+                        <!-- <button class="btn" type="submit">Subscribe</button> -->
+                        <button class="btn btn-outline-success" type="submit">Subscribe</button>
+                    </form>
+
+                    <!-- Alert Message -->
+                    <div *ngIf="showMessage" class="alert alert-success mt-3">
+                        ✅ <strong>{{ email }}</strong> has subscribed successfully!<br />
+                        You’ll now receive all company updates.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+        <div class="me-md-auto text-center text-md-start">
+            <div class="copyright">
+                &copy; 2025 <strong><span>Misard Software Solutions India Pvt Ltd</span></strong>. All Rights Reserved.
+            </div>
+            <div class="credits">
+                <!-- All the links in the footer should remain intact. -->
+                <!-- You can delete the links only if you purchased the pro version. -->
+                <!-- Licensing information: https://Misard.com/license/ -->
+                <!-- Purchase the pro version with working PHP/AJAX contact form: https://Misard.com/mentor-free-education-bootstrap-theme/ -->
+                Designed by <a href="https://Misard.com/">Misard</a>
+            </div>
+        </div>
+        <!-- Social Icons with Click Notification -->
+        <div class="social-links text-center text-md-right pt-3 pt-md-0">
+            <a href="javascript:void(0);" (click)="showSocialAlert()" class="twitter" title="Coming soon"><i
+                    class="bx bxl-twitter"></i></a>
+            <a href="javascript:void(0);" (click)="showSocialAlert()" class="facebook" title="Coming soon"><i
+                    class="bx bxl-facebook"></i></a>
+            <a href="javascript:void(0);" (click)="showSocialAlert()" class="instagram" title="Coming soon"><i
+                    class="bx bxl-instagram"></i></a>
+            <a href="javascript:void(0);" (click)="showSocialAlert()" class="google-plus" title="Coming soon"><i
+                    class="bx bxl-skype"></i></a>
+            <a href="javascript:void(0);" (click)="showSocialAlert()" class="linkedin" title="Coming soon"><i
+                    class="bx bxl-linkedin"></i></a>
+        </div>
+
+        <!-- Bootstrap Alert -->
+        <!-- Social Media Notification -->
+        <div *ngIf="socialAlertVisible" class="alert alert-info alert-dismissible fade show mt-3 text-center"
+            role="alert" style="max-width: 500px; margin: auto;">
+            <span class="d-none d-md-inline">✅ <strong>Social Media Pages</strong> are coming soon. Stay tuned!</span>
+            <span class="d-md-none d-block">
+                ✅ <strong>Social Media Pages</strong><br />are coming soon. Stay tuned!
+            </span>
+            <button type="button" class="btn-close" aria-label="Close" (click)="socialAlertVisible = false"></button>
+        </div>
+
+    </div>
+</footer>
+<!-- End Footer -->
+<!-- 
+<div id="preloader"></div>
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"
+  ><i class="bi bi-arrow-up-short"></i
+></a> -->
