@@ -284,6 +284,60 @@ His structured methodology and commitment to each trainee’s success make this 
         }
       ]
     },
+      {
+      "title": "Mandatory: Debugging Techniques",
+      "describes": `This module covers essential debugging techniques in C# using Visual Studio.
+It starts with a theoretical overview and moves into hands-on demonstrations.
+You'll learn about breakpoints, step execution (F10/F11), and various debugging windows.
+The course also explains how to start, stop, and run applications with or without debugging.
+A quick summary with shortcut keys wraps up the module for easy reference.`,
+      "lessons": [
+        {
+          "name": "Debugging in C# - Theoretical Overview",
+          "id": "3sqmn9xyt6U"
+        },
+        {
+          "name": "Topics We Are Going to Cover",
+          "id": "dGQPaWew79o"
+        },
+        {
+          "name": "What is Debugging",
+          "id": "5CdZTgXOGSM"
+        },
+        {
+          "name": "Create the Program for Debugging Demo",
+          "id": "Q9f674oMH3s"
+        },
+        {
+          "name": "What is Start Without Debugging, Start Debugging and Stop Debugging",
+          "id": "9vAbnAuTlVM"
+        },
+        {
+          "name": "Start Debugging and Stop Debugging - Practical",
+          "id": "K1Wc7DvXmVs"
+        },
+        {
+          "name": "Breakpoints Explained",
+          "id": "_MpyxffIBjQ"
+        },
+        {
+          "name": "Watch Window, Immediate Window, and Set Next Statement",
+          "id": "8Mq8sWBZR-s"
+        },
+        {
+          "name": "More Explanation on F10 and F11 (Step Into and Step Over)",
+          "id": "DC8OYxXVDZk"
+        },
+        {
+          "name": "Implement All Debugging Techniques in the Program",
+          "id": "iEPcUebiMA4"
+        },
+         {
+          "name": "All Debugging Shortcut Keys - Summary (Quick Cheat Sheet)",
+          "id": "qxrH3WpCRvY"
+        }
+      ]
+    },
     {
       "title": "Chapter 3: All about Methods",
       "describes": "This chapter focuses on methods in C#. It covers method overloading, method hiding, and the use of ref and out parameters. It also introduces asynchronous programming with async and await keywords, exception handling, and custom exceptions.",
@@ -508,60 +562,7 @@ His structured methodology and commitment to each trainee’s success make this 
         }
       ]
     },
-     {
-      "title": "Mandatory: Debugging Techniques",
-      "describes": `This module covers essential debugging techniques in C# using Visual Studio.
-It starts with a theoretical overview and moves into hands-on demonstrations.
-You'll learn about breakpoints, step execution (F10/F11), and various debugging windows.
-The course also explains how to start, stop, and run applications with or without debugging.
-A quick summary with shortcut keys wraps up the module for easy reference.`,
-      "lessons": [
-        {
-          "name": "Debugging in C# - Theoretical Overview",
-          "id": "3sqmn9xyt6U"
-        },
-        {
-          "name": "Topics We Are Going to Cover",
-          "id": "dGQPaWew79o"
-        },
-        {
-          "name": "What is Debugging",
-          "id": "5CdZTgXOGSM"
-        },
-        {
-          "name": "Create the Program for Debugging Demo",
-          "id": "Q9f674oMH3s"
-        },
-        {
-          "name": "What is Start Without Debugging, Start Debugging and Stop Debugging",
-          "id": "9vAbnAuTlVM"
-        },
-        {
-          "name": "Start Debugging and Stop Debugging - Practical",
-          "id": "K1Wc7DvXmVs"
-        },
-        {
-          "name": "Breakpoints Explained",
-          "id": "_MpyxffIBjQ"
-        },
-        {
-          "name": "Watch Window, Immediate Window, and Set Next Statement",
-          "id": "8Mq8sWBZR-s"
-        },
-        {
-          "name": "More Explanation on F10 and F11 (Step Into and Step Over)",
-          "id": "DC8OYxXVDZk"
-        },
-        {
-          "name": "Implement All Debugging Techniques in the Program",
-          "id": "iEPcUebiMA4"
-        },
-         {
-          "name": "All Debugging Shortcut Keys - Summary (Quick Cheat Sheet)",
-          "id": "qxrH3WpCRvY"
-        }
-      ]
-    }
+   
   ];
 
 
