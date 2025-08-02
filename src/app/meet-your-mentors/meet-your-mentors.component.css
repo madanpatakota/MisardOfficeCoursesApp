@@ -59,20 +59,39 @@
 .step-number {
   background-color: #f9a826;
   color: #0c2d50;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 1rem;
   border-radius: 50%;
-  width: 34px;
-  height: 34px;
+  width: 36px;
+  height: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
   left: 12px;
   top: 0;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  box-shadow: 0 0 12px rgba(255, 168, 38, 0.6); /* stronger glow for focus */
+  border: 2px solid #fff;
+  z-index: 1;
+  transition: none !important; /* prevent any unwanted hover effects */
+  pointer-events: none; /* disables mouse interaction if needed */
 }
 
+@keyframes pulseFocus {
+  0% { box-shadow: 0 0 8px rgba(249, 168, 38, 0.6); }
+  50% { box-shadow: 0 0 14px rgba(249, 168, 38, 0.9); }
+  100% { box-shadow: 0 0 8px rgba(249, 168, 38, 0.6); }
+}
+
+.step-number {
+  animation: pulseFocus 2s infinite;
+}
+
+
+.highlighted-step .step-number {
+  background-color: #ffc107;
+  box-shadow: 0 0 16px rgba(255, 193, 7, 0.8); /* glowing effect for final step */
+}
 .step-content h3 {
   margin: 0;
   font-size: 1.25rem;
