@@ -75,7 +75,7 @@
 
 .custom-toggler {
   width: 25px;
-  height: 20px;
+  height: 22px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -103,8 +103,6 @@
 @media (min-width: 992px) {
   .custom-toggler {
     display: none !important;
-    width:25px;
-    height: 22px;
   }
 }
 .try-demo-btn {
@@ -139,11 +137,6 @@
 
 /* 🔻 Mobile Optimization */
 @media (max-width: 768px) {
-   .custom-toggler {
-    display: none !important;
-    width:25px;
-    height: 22px;
-  }
   .try-demo-btn {
     display: block;
     width: 100%;
