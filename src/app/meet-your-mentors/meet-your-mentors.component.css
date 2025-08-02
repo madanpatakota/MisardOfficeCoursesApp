@@ -1,5 +1,5 @@
 .mentorship-timeline {
-  background-color: #0c2d50;
+  background: linear-gradient(to right, #0b2948, #123d6b); /* MISARD THEME */
   color: #ffffff;
   padding: 3rem 1rem;
   border-radius: 18px;
@@ -9,9 +9,9 @@
 .mentorship-timeline h2 {
   text-align: center;
   color: #f9a826;
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 800;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
 }
 
 .mentorship-timeline .intro {
@@ -19,16 +19,15 @@
   font-size: 1.05rem;
   color: #d2d2d2;
   margin-bottom: 3rem;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 720px;
+  margin-inline: auto;
 }
 
 .timeline {
   list-style: none;
   margin: 0 auto;
   padding: 0;
-  max-width: 700px;
+  max-width: 720px;
   position: relative;
 }
 
@@ -54,8 +53,6 @@
   gap: 1rem;
 }
 
-
-
 .step-number {
   background-color: #f9a826;
   color: #0c2d50;
@@ -70,28 +67,17 @@
   position: absolute;
   left: 12px;
   top: 0;
-  box-shadow: 0 0 12px rgba(255, 168, 38, 0.6); /* stronger glow for focus */
-  border: 2px solid #fff;
-  z-index: 1;
-  transition: none !important; /* prevent any unwanted hover effects */
-  pointer-events: none; /* disables mouse interaction if needed */
+  box-shadow: 0 0 12px rgba(255, 168, 38, 0.6);
+  border: 2px solid #ffffff;
+  pointer-events: none;
+  transition: none;
 }
-
-@keyframes pulseFocus {
-  0% { box-shadow: 0 0 8px rgba(249, 168, 38, 0.6); }
-  50% { box-shadow: 0 0 14px rgba(249, 168, 38, 0.9); }
-  100% { box-shadow: 0 0 8px rgba(249, 168, 38, 0.6); }
-}
-
-.step-number {
-  animation: pulseFocus 2s infinite;
-}
-
 
 .highlighted-step .step-number {
   background-color: #ffc107;
-  box-shadow: 0 0 16px rgba(255, 193, 7, 0.8); /* glowing effect for final step */
+  box-shadow: 0 0 16px rgba(255, 193, 7, 0.8);
 }
+
 .step-content h3 {
   margin: 0;
   font-size: 1.25rem;
@@ -100,35 +86,26 @@
 }
 
 .step-content p {
-  margin: 0.4rem 0 0;
-  color: #cccccc;
+  margin-top: 0.4rem;
+  color: #d0d0d0;
   font-size: 1rem;
   line-height: 1.6;
 }
 
-.highlighted-step .step-number {
-  background-color: #ffc107;
-  box-shadow: 0 0 12px #ffc107;
-}
 .mentor-note {
-   background-color: #144264;
+  background-color: #144264;
   color: #ffffff;
   border-radius: 16px;
   padding: 2rem;
-  margin: 2rem auto; /* Centered with vertical spacing */
+  margin: 2rem auto;
   font-family: 'Poppins', sans-serif;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease;
-  max-width: 1000px; /* Adjust width as needed */
-}
-
-.mentor-note:hover {
-  transform: translateY(-5px);
+  max-width: 800px;
 }
 
 .mentor-note h4 {
   font-size: 1.5rem;
-  color: #F9A826;
+  color: #f9a826;
   margin-bottom: 1rem;
   font-weight: 700;
   text-align: center;
@@ -159,23 +136,35 @@
   position: absolute;
   left: 0;
   top: 0;
-  color: #F9A826;
+  color: #f9a826;
   font-size: 1.1rem;
 }
 
 .mentor-note a {
-  color: #F9A826;
+  color: #f9a826;
   text-decoration: underline;
 }
-
 .mentor-note a:hover {
   text-decoration: none;
 }
 
-/* Responsive adjustments */
+/* Responsive */
 @media (max-width: 768px) {
+  .mentorship-timeline {
+    padding: 2rem 1rem;
+  }
+
+  .timeline {
+    padding-left: 0;
+  }
+
+  .timeline li {
+    padding-left: 60px;
+  }
+
   .mentor-note {
     padding: 1.5rem 1rem;
+    max-width: 95%;
   }
 
   .mentor-note h4 {
@@ -187,4 +176,3 @@
     font-size: 1rem;
   }
 }
-
