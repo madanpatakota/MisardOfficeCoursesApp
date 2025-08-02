@@ -22,6 +22,7 @@ import { AppComponent } from './app.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { CoursesComponent } from './courses/courses.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MeetYourMentorsComponent } from './meet-your-mentors/meet-your-mentors.component';
 
 
 
@@ -35,6 +36,7 @@ const appRoutes: Routes = [
   { path: 'html-training', component: HtmlComponent },
   { path: 'aws-training', component: AwsComponent },
   { path: 'azure-training', component: AzureComponent },
+  {path:'meet-your-mentor' , component:MeetYourMentorsComponent},
   { path: 'not-found', component: NotfoundComponent },
   {
     path: 'articles',
