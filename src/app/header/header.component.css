@@ -105,4 +105,47 @@
     display: none !important;
   }
 }
+.try-demo-btn {
+  padding: 10px 22px;
+  background-color: #f9a826;
+  color: #000;
+  font-weight: 600;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 0 0 0 rgba(249,168,38, 0.7);
+  animation: pulse-animation 2s infinite;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.try-demo-btn:hover {
+  background-color: #144264;
+  color: #fff;
+}
+
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0 rgba(249,168,38, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(249,168,38, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(249,168,38, 0);
+  }
+}
+
+/* 🔻 Mobile Optimization */
+@media (max-width: 768px) {
+  .try-demo-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 12px 16px;
+    font-size: 1rem;
+    border-radius: 12px;
+    margin: 10px auto;
+    font-weight: 700;
+  }
+}
 
