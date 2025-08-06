@@ -66,12 +66,16 @@ With ongoing community support and real-world enterprise use, Angular developers
     'Graduates (BCA/MCA/B.Tech) aiming to build a strong portfolio in UI development with real projects.'
   ];
 
-
+      // ProjectURL: 'https://ngcore.azurewebsites.net/',
+      //https://ngadvanced.azurewebsites.net/
+      //https://ngtrans.azurewebsites.net/
+      //https://ngservices.azurewebsites.net/
+      //https://ngrouting.azurewebsites.net/
   chaptersList = [
     {
       title: 'Angular Basics: First Level',
       describes: `Explore essential concepts like String Interpolation, Property Binding, Event Binding, and Two-Way Binding in this Angular Basics course.`,
-      ProjectURL: 'https://ngbasics.azurewebsites.net/',
+      ProjectURL: 'https://happy-bay-036cc6810.1.azurestaticapps.net/',
       lessons: [
         {
           id: 1,
@@ -107,7 +111,7 @@ With ongoing community support and real-world enterprise use, Angular developers
     {
       title: 'Angular Basics: Intermediate Techniques',
       describes: `Dive into Angular concepts like ngStyle, ngClass, ngIf, LocalRef, ngTemplate, ngIf and Else, ngFor, and ngSwitch to enhance your understanding of Angular development.`,
-      ProjectURL: 'https://ngcore.azurewebsites.net/',
+      ProjectURL: 'https://victorious-dune-0004efe10.1.azurestaticapps.net',
       lessons: [
         {
           id: 1,
@@ -146,7 +150,7 @@ With ongoing community support and real-world enterprise use, Angular developers
     {
       title: 'Advanced Angular: Content Control Techniques',
       describes: `Explore advanced Angular techniques for content control, including ViewChild, ContentChild, ngContent, ngContainer, TemplateRef, and Dynamic Templates.`,
-      url: 'https://ngadvanced.azurewebsites.net/',
+      url: 'https://ambitious-grass-08b7b2810.2.azurestaticapps.net/',
       lessons: [
         {
           id: 1,
@@ -177,7 +181,7 @@ With ongoing community support and real-world enterprise use, Angular developers
     {
       title: 'Advanced Angular: Data Communication Strategies',
       describes: `Discover essential Angular concepts such as Input, Output, and EventEmitter for efficient data exchange between components.`,
-      ProjectURL: 'https://ngtrans.azurewebsites.net/',
+      ProjectURL: 'https://brave-smoke-02ee52f10.2.azurestaticapps.net',
       lessons: [
         {
           id: 1,
@@ -196,7 +200,7 @@ With ongoing community support and real-world enterprise use, Angular developers
     {
       title: 'Angular: Services',
       describes: `Explore Angular Services, covering topics like creation of services, utilization at various component levels, data communication mechanisms, and cross-communication between services.`,
-      ProjectURL: 'https://ngservices.azurewebsites.net/',
+      ProjectURL: 'https://lemon-rock-0f1f34810.1.azurestaticapps.net/',
       lessons: [
         {
           id: 1,
@@ -227,7 +231,7 @@ With ongoing community support and real-world enterprise use, Angular developers
     {
       title: 'Angular: Routing',
       describes: `Learn about Angular Routing, including setting up routing in AppModule, using RouterLinks, exploring different types of parameters in Router URLs, and implementing Subscription Routing.`,
-      ProjectUrl: 'https://ngrouting.azurewebsites.net/',
+      ProjectUrl: 'https://gentle-rock-0a484b810.1.azurestaticapps.net/',
       lessons: [
         {
           id: 1,
@@ -370,7 +374,7 @@ With ongoing community support and real-world enterprise use, Angular developers
     {
       title: 'Angular Basics: First Level',
       describes: `Explore essential concepts like String Interpolation, Property Binding, Event Binding, and Two-Way Binding in this Angular Basics course.`,
-      ProjectURL: 'https://ngbasics.azurewebsites.net/',
+      ProjectURL: 'https://happy-bay-036cc6810.1.azurestaticapps.net/',
       lessons:
         [
           {
@@ -414,7 +418,7 @@ With ongoing community support and real-world enterprise use, Angular developers
     {
       title: 'Angular Basics: Intermediate Techniques',
       describes: `Dive into Angular concepts like ngStyle, ngClass, ngIf, LocalRef, ngTemplate, ngIf and Else, ngFor, and ngSwitch to enhance your understanding of Angular development.`,
-      ProjectURL: 'https://ngcore.azurewebsites.net/',
+      ProjectURL: 'https://victorious-dune-0004efe10.1.azurestaticapps.net/',
       lessons: [
         {
           id: 1,
@@ -456,7 +460,7 @@ With ongoing community support and real-world enterprise use, Angular developers
     {
       title: 'Advanced Angular: Content Control Techniques',
       describes: `Explore advanced Angular techniques for content control, including ViewChild, ContentChild, ngContent, ngContainer, TemplateRef, and Dynamic Templates.`,
-      url: 'https://ngadvanced.azurewebsites.net/',
+      url: 'https://ambitious-grass-08b7b2810.2.azurestaticapps.net/',
       lessons: [
         {
           id: 1,
@@ -488,7 +492,7 @@ With ongoing community support and real-world enterprise use, Angular developers
     {
       title: 'Advanced Angular: Data Communication Strategies',
       describes: `Discover essential Angular concepts such as Input, Output, and EventEmitter for efficient data exchange between components.`,
-      ProjectURL: 'https://ngtrans.azurewebsites.net/',
+     ProjectURL: 'https://brave-smoke-02ee52f10.2.azurestaticapps.net',
       lessons: [
         {
           id: 1,
@@ -505,7 +509,7 @@ With ongoing community support and real-world enterprise use, Angular developers
     {
       title: 'Angular: Services',
       describes: `Explore Angular Services, covering topics like creation of services, utilization at various component levels, data communication mechanisms, and cross-communication between services.`,
-      ProjectURL: 'https://ngservices.azurewebsites.net/',
+      ProjectURL: 'https://lemon-rock-0f1f34810.1.azurestaticapps.net/',
       lessons: [
         {
           id: 1,
@@ -547,7 +551,7 @@ With ongoing community support and real-world enterprise use, Angular developers
     {
       title: 'Angular: Routing',
       describes: `Learn about Angular Routing, including setting up routing in AppModule, using RouterLinks, exploring different types of parameters in Router URLs, and implementing Subscription Routing.`,
-      ProjectUrl: 'https://ngrouting.azurewebsites.net/',
+      ProjectUrl: 'https://gentle-rock-0a484b810.1.azurestaticapps.net/',
       lessons: [
         {
           id: 1,
