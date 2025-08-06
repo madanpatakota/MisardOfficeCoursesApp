@@ -150,7 +150,7 @@ With ongoing community support and real-world enterprise use, Angular developers
     {
       title: 'Advanced Angular: Content Control Techniques',
       describes: `Explore advanced Angular techniques for content control, including ViewChild, ContentChild, ngContent, ngContainer, TemplateRef, and Dynamic Templates.`,
-      url: 'https://ambitious-grass-08b7b2810.2.azurestaticapps.net/',
+      ProjectURL: 'https://ambitious-grass-08b7b2810.2.azurestaticapps.net/',
       lessons: [
         {
           id: 1,
@@ -231,7 +231,7 @@ With ongoing community support and real-world enterprise use, Angular developers
     {
       title: 'Angular: Routing',
       describes: `Learn about Angular Routing, including setting up routing in AppModule, using RouterLinks, exploring different types of parameters in Router URLs, and implementing Subscription Routing.`,
-      ProjectUrl: 'https://gentle-rock-0a484b810.1.azurestaticapps.net/',
+      ProjectURL: 'https://gentle-rock-0a484b810.1.azurestaticapps.net/',
       lessons: [
         {
           id: 1,
@@ -262,7 +262,7 @@ With ongoing community support and real-world enterprise use, Angular developers
     {
       title: 'Angular: Forms',
       describes: `Explore Angular Template Forms and Reactive Forms, covering topics like form creation, validation, handling form data, and manipulating form values.`,
-      ProjectUrl: 'https://ngforms.azurewebsites.net/',
+      ProjectURL: 'https://ngforms.azurewebsites.net/',
       lessons: [
         {
           id: 1,
