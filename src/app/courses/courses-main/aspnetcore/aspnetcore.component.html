@@ -1,0 +1,166 @@
+<div class="container py-5">
+  <!-- Breadcrumb -->
+  <nav aria-label="breadcrumb" data-aos="fade-down">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a [routerLink]="['/']">Home</a></li>
+      <li class="breadcrumb-item"><a [routerLink]="['/courses']">Courses</a></li>
+      <li class="breadcrumb-item active" aria-current="page">ASP.NET Core Web API</li>
+    </ol>
+  </nav>
+
+  <!-- Heading -->
+  <h1 class="fw-bold mb-5 text-primary" data-aos="fade-up">ASP.NET Core Web API Training</h1>
+
+  <!-- Course Overview -->
+  <div class="section-card" data-aos="fade-up">
+    <h2 class="section-title">Course Overview</h2>
+    <p>{{ overviewText }}</p>
+  </div>
+
+  <!-- About Trainer -->
+  <div class="section-card" data-aos="fade-up" data-aos-delay="100">
+    <h2 class="section-title">About the Trainer</h2>
+    <p>{{ trainerInfo }}</p>
+  </div>
+
+  <!-- Course Content -->
+  <div class="section-card mb-5">
+    <h2 class="section-title"><i class="bi bi-journal-code"></i> Course Content</h2>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4" *ngFor="let chapter of chaptersList" data-aos="fade-up" data-aos-delay="100">
+        <div class="card h-100 shadow-lg border-0 course-card position-relative">
+          <div class="card-body p-4 d-flex flex-column justify-content-between">
+            <div>
+              <h5 class="card-title text-primary fw-bold">{{ chapter.title }}</h5>
+              <p class="chapter-description text-muted small d-flex align-items-start mt-2">
+                <i class="bi bi-info-circle me-2 text-secondary"></i>
+                <span>{{ chapter.describes }}</span>
+              </p>
+            </div>
+            <div class="mt-4 d-flex justify-content-between align-items-center">
+              <span (click)="openChapterModal(chapter)" class="badge bg-gradient-primary text-white px-3 py-2">
+                {{ chapter.lessons.length }} Lessons
+              </span>
+              <div class="d-flex gap-2">
+                <!-- Open Lessons Modal -->
+                <button class="btn btn-outline-primary btn-sm rounded-circle"
+                        (click)="openChapterModal(chapter)" title="View Lessons">
+                  <i class="bi bi-list-ul"></i>
+                </button>
+                <!-- Live URL -->
+                <a *ngIf="chapter.ProjectURL; else noAccess"
+                   [href]="chapter.ProjectURL" target="_blank"
+                   class="btn btn-outline-success btn-sm rounded-circle" title="Open Project">
+                  <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+                <!-- GitHub -->
+                <a *ngIf="chapter.ProjectGitHubURL; else noAccess"
+                   [href]="chapter.ProjectGitHubURL" target="_blank"
+                   class="btn btn-outline-dark btn-sm rounded-circle" title="Open GitHub Repo">
+                  <i class="bi bi-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <ng-template #noAccess>
+    <a (click)="showAccessDenied()" href="javascript:void(0)"
+       class="btn btn-outline-danger btn-sm rounded-circle" title="Access Denied">
+      <i class="bi bi-shield-lock-fill"></i>
+    </a>
+  </ng-template>
+
+  <!-- What You Will Learn -->
+  <div class="section-card" data-aos="fade-up" data-aos-delay="300">
+    <h2 class="section-title">What You Will Learn</h2>
+    <ul class="feature-list">
+      <li *ngFor="let item of whoShouldLearn">✔️ {{ item }}</li>
+    </ul>
+  </div>
+
+  <!-- ASP.NET Core in IT Market -->
+  <div class="section-card" data-aos="fade-up" data-aos-delay="400">
+    <h2 class="section-title">ASP.NET Core in the IT Market</h2>
+    <p *ngFor="let paragraph of marketInsight">{{ paragraph }}</p>
+  </div>
+
+  <!-- Course Videos Accordion -->
+  <div class="section-card" data-aos="fade-up" data-aos-delay="600">
+    <h2 class="section-title mb-4"><i class="bi bi-camera-reels"></i> Course Videos</h2>
+    <div class="accordion" id="videoAccordion">
+      <div class="accordion-item" *ngFor="let chapter of VideosList; let i = index">
+        <h2 class="accordion-header" [id]="'asp-header-' + i">
+          <button
+            class="accordion-button collapsed d-flex align-items-center justify-content-between text-white"
+            type="button" data-bs-toggle="collapse" [attr.data-bs-target]="'#asp-collapse-' + i"
+            aria-expanded="false" [attr.aria-controls]="'asp-collapse-' + i"
+            style="background-color: #144164;">
+            <span><i class="bi bi-play-circle me-2 text-white"></i> {{ chapter.title }}</span>
+            <span class="badge bg-white text-dark ms-2">{{ chapter.lessons.length }} Lessons</span>
+          </button>
+        </h2>
+        <div [id]="'asp-collapse-' + i" class="accordion-collapse collapse"
+             [attr.aria-labelledby]="'asp-header-' + i" data-bs-parent="#videoAccordion">
+          <div class="accordion-body bg-light text-dark">
+            <p class="mb-3">{{ chapter.describes }}</p>
+            <ul class="list-group">
+              <li *ngFor="let lesson of chapter.lessons"
+                  class="list-group-item d-flex align-items-center video-lesson-item">
+                <i class="bi bi-play-circle text-primary me-2"></i> {{ lesson.name }}
+                <button class="btn btn-sm btn-outline-primary ms-auto"
+                        (click)="openVideo(chapter.title, lesson)">
+                  <i class="bi bi-play-fill"></i> Watch
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Chapter Lessons Modal -->
+<div class="modal fade" id="chapterModal" tabindex="-1" aria-labelledby="chapterModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content rounded-4 shadow">
+      <div class="modal-header text-white" style="background-color: #144164;">
+        <h5 class="modal-title" id="chapterModalLabel">{{ selectedChapter?.title }}</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <input type="text" class="form-control mb-3" placeholder="Search lesson..." [(ngModel)]="lessonSearch" />
+        <ul class="list-group list-group-flush">
+          <li *ngFor="let lesson of filteredLessons(); let i = index"
+              class="list-group-item d-flex align-items-center lesson-item">
+            <i class="bi bi-check-circle-fill text-success me-2"></i>
+            Lesson {{ i + 1 }}: {{ lesson.name }}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Video Modal -->
+<div class="modal fade" id="chapterVideoModal" tabindex="-1" aria-labelledby="chapterVideoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content rounded-4">
+      <div class="modal-header text-white" style="background-color: #144164;">
+        <h5 class="modal-title">{{ selectedVideoTitle }}</h5>
+        <button type="button" class="btn-close btn-close-white" (click)="closeVideo()" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-0">
+        <iframe *ngIf="safeVideoUrl" [src]="safeVideoUrl" width="100%" height="500px" frameborder="0"
+                allowfullscreen class="rounded-bottom-4 border border-primary"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Scroll to top (reuse your existing component) -->
+<app-scroll-top-button></app-scroll-top-button>

@@ -1,0 +1,71 @@
+/* Hover zoom effect on card images */
+.hover-zoom {
+  transition: transform 0.5s ease;
+}
+
+.hover-zoom:hover {
+  transform: scale(1.08);
+}
+
+/* Description points styling */
+.description-item {
+  padding: 6px 10px;
+  border-radius: 8px;
+  transition: background-color 0.4s, transform 0.3s, box-shadow 0.3s;
+}
+
+.description-item:hover {
+  background-color: #f0f7fc; /* Light blue on hover */
+  transform: translateX(5px); /* Small right move */
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Tick mark styling */
+.highlight-icon {
+  color: #144164;
+  transition: color 0.4s;
+}
+
+.description-item:hover .highlight-icon {
+  color: #0a58ca; /* Bright blue on hover */
+}
+
+/* Mobile specific improvements */
+@media (max-width: 768px) {
+  .description-item {
+    background-color: #f8fbff; /* Light background by default */
+    padding: 8px 12px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    box-shadow: none;
+  }
+
+  .description-item:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}
+
+/* Scroll to Top Button Styling */
+.scroll-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  width: 45px;
+  height: 45px;
+  background-color: #144164;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.4s, transform 0.4s;
+  z-index: 999;
+}
+
+.scroll-to-top:hover {
+  background-color: #0a58ca;
+  transform: scale(1.1);
+}

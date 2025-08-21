@@ -1,0 +1,141 @@
+.orbit-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.orbit-block {
+  background-color: #0c2d50;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  width: 280px;
+  min-height: 240px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.orbit-block:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.orbit-block h5 {
+  font-size: 1.4rem;
+  color: #f9a826;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.orbit-block ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.orbit-block li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.orbit-block li img {
+  width: 24px;
+  height: 24px;
+  margin-right: 0.6rem;
+  flex-shrink: 0;
+}
+
+@media (max-width: 576px) {
+  .orbit-block {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  .orbit-title {
+    font-size: 1.5rem;
+  }
+}
+
+
+.connect-wrapper {
+  background: linear-gradient(135deg, #144264, #0c2d50);
+  border-top: 4px solid #f9a826;
+  border-radius: 1rem;
+  margin-top: 3rem;
+}
+
+.connect-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #f9a826;
+}
+
+.connect-message {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #f0f0f0;
+}
+
+.contact-box {
+  background-color: #0c2d50;
+  border-radius: 1rem;
+  display: inline-block;
+  color: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.email-link {
+  font-size: 1.2rem;
+  color: #f9a826;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+.small-text {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+@media (max-width: 576px) {
+  .connect-title {
+    font-size: 1.5rem;
+  }
+
+  .connect-message {
+    font-size: 1rem;
+  }
+
+  .email-link {
+    font-size: 1rem;
+  }
+}
+
+.orbit-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #f9a826;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 2.5rem;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .orbit-title {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+}

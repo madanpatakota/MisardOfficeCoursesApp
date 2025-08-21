@@ -1,0 +1,13 @@
+.lazy-image {
+  width: 100%;
+  height: auto;
+  border-radius: 0 0 1rem 1rem;
+  display: block;
+}
+
+.spinner-border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}

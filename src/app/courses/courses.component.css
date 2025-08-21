@@ -1,0 +1,128 @@
+/* Existing Your CSS */
+
+/* 2 line text truncation */
+.text-truncate-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Fixed Image Size */
+.fixed-image {
+  height: 200px; /* Uniform height */
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Card full height */
+.card {
+  height: 100%;
+}
+
+/* Card Body Stretch */
+.card-body {
+  flex-grow: 1;
+}
+
+/* Course Link Styling */
+.project-link {
+  color: #144164 !important; 
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+  color: #0a2d50 !important;
+}
+
+/* Card Footer */
+.card-footer {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* ===================================== */
+/* NEW Enhancements for More Rich Design */
+/* ===================================== */
+
+/* Course Card Hover Effect */
+.course-card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.course-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(20, 65, 100, 0.3);
+}
+
+/* For explore button inside card (Explore Course button) */
+.explore-btn {
+  background-color: #144164;
+  color: white;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-weight: 600;
+  padding: 8px 12px;
+}
+
+.explore-btn:hover {
+  background-color: #0a58ca;
+  transform: translateY(-2px);
+  color: white;
+}
+
+/* Feature Points inside Card */
+.feature-point {
+  font-size: 14px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  color: #144164;
+}
+
+.feature-point i {
+  margin-right: 8px;
+  color: #144164;
+}
+
+/* Course Image inside Card */
+.course-image {
+  height: 220px;
+  object-fit: cover;
+}
+
+/* Responsive: Adjust on mobile */
+@media (max-width: 768px) {
+  .course-card {
+    margin-bottom: 20px;
+  }
+
+  .fixed-image, .course-image {
+    height: 180px; /* Slightly smaller for mobile */
+  }
+
+  .explore-btn {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+}
+
+.feature-link {
+  text-decoration: none;
+  color: #144164;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.feature-link:hover {
+  text-decoration: underline;
+  color: #0a58ca;
+}
+

@@ -1,0 +1,4 @@
+<img [src]="src" [alt]="alt" (load)="onLoad()" [class.loaded]="loaded" class="lazy-image" />
+<div *ngIf="!loaded" class="spinner-border text-primary" role="status">
+    <span class="visually-hidden">Loading...</span>
+</div>

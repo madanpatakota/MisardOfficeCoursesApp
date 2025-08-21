@@ -1,0 +1,157 @@
+<div class="container py-5">
+
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb" data-aos="fade-down">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a [routerLink]="['/']">Home</a></li>
+            <li class="breadcrumb-item"><a [routerLink]="['/courses']">Courses</a></li>
+            <li class="breadcrumb-item active" aria-current="page">HTML Course</li>
+        </ol>
+    </nav>
+
+    <!-- Main Heading -->
+    <h1 class="fw-bold mb-5 text-primary" data-aos="fade-up">
+        HTML Course
+    </h1>
+
+    <!-- Section Card: Course Overview -->
+    <div class="section-card" data-aos="fade-up">
+        <h2 class="section-title">Course Overview</h2>
+        <p>
+            This HTML Beginner Course is designed for absolute beginners who aspire to build a strong foundation in web
+            development.
+            Through a step-by-step, hands-on approach, you will learn how to structure modern, responsive web pages
+            using HTML5 standards.
+        </p>
+        <p>
+            The course covers everything from basic building blocks — headings, paragraphs, images, links — to advanced
+            topics
+            such as semantic HTML, forms, and page layouts. You will also explore how HTML works with CSS to create
+            visually attractive websites.
+            By the end, you will confidently build professional web pages and be ready for further learning in
+            JavaScript, Angular, or full-stack development.
+        </p>
+    </div>
+
+    <!-- Section Card: About Trainer -->
+    <div class="section-card" data-aos="fade-up" data-aos-delay="100">
+        <h2 class="section-title">About the Trainer</h2>
+        <p>
+            Madan Patakota is an experienced software developer and a passionate educator with over a decade of
+            real-world industry experience.
+            He specializes in Front-End Development, Full Stack Application Design, and Cloud Solutions across sectors
+            including telecom, real estate, insurance, and marketing.
+        </p>
+        <p>
+            Beyond his professional work, Madan has mentored hundreds of students and fresh graduates, focusing on
+            practical, hands-on learning.
+            His teaching emphasizes simplicity, clarity, and real-world applications, helping learners become job-ready
+            professionals.
+        </p>
+    </div>
+
+    <!-- Section Card: Course Content -->
+    <div class="section-card" data-aos="fade-up" data-aos-delay="200">
+        <h2 class="section-title">Course Content</h2>
+        <ul class="list-unstyled">
+            <li *ngFor="let topic of courseTopics" class="list-point">
+                <i class="fas fa-check-circle me-2"></i> <strong>{{ topic.session }}</strong> — {{ topic.details }}
+            </li>
+        </ul>
+    </div>
+
+    <!-- Section Card: What You Will Learn -->
+    <div class="section-card" data-aos="fade-up">
+        <h2 class="section-title">What You Will Learn</h2>
+        <ul class="feature-list">
+            <li>✔️ Understand the fundamental structure of HTML documents.</li>
+            <li>✔️ Create well-organized web pages using semantic HTML5 elements.</li>
+            <li>✔️ Design mobile-responsive layouts with proper HTML structuring.</li>
+            <li>✔️ Add headings, paragraphs, images, links, lists, and multimedia to web pages.</li>
+            <li>✔️ Build navigation menus and understand page linking with anchor tags.</li>
+            <li>✔️ Develop structured tables and manage complex table layouts with rowspan and colspan.</li>
+            <li>✔️ Create fully functional forms with input fields, checkboxes, radio buttons, dropdowns, and form
+                validation basics.</li>
+            <li>✔️ Apply inline, internal, and external CSS styles to enhance page design.</li>
+            <li>✔️ Understand the Box Model concept and control spacing, margins, padding, and borders.</li>
+            <li>✔️ Lay a strong foundation for learning JavaScript, Angular, and full-stack web development by mastering
+                HTML basics.</li>
+        </ul>
+    </div>
+
+    <!-- Section Card: Market Demand -->
+<div class="section-card" data-aos="fade-up">
+    <h2 class="section-title">HTML in the IT Market</h2>
+    <p>
+        HTML remains the foundational building block of the web and continues to be an essential skill across the IT
+        industry.
+        From creating responsive websites to building user interfaces for complex web applications, HTML forms the
+        backbone of digital experiences.
+    </p>
+    <p>
+        Startups, agencies, and multinational companies consistently seek developers with strong HTML fundamentals,
+        combined with CSS and JavaScript,
+        to build high-performance, accessible, and mobile-friendly websites. Mastering HTML not only opens doors to
+        front-end development careers
+        but also lays the groundwork for moving into advanced technologies like Angular, React, Vue, and full-stack
+        development roles.
+    </p>
+    <p>
+        In today's digital-first economy, companies prioritize candidates who can create structured, semantic,
+        SEO-friendly websites —
+        and HTML mastery directly impacts website ranking, accessibility, and user engagement. Whether you're targeting
+        product-based companies,
+        service-based IT firms, or freelance web development, having solid HTML skills significantly enhances your
+        career opportunities.
+    </p>
+    <p>
+        By gaining expertise in HTML, you position yourself at the center of web innovation — capable of building
+        applications that scale across
+        devices, platforms, and industries.
+    </p>
+</div>
+
+    <!-- Section Card: Who Should Learn -->
+    <div class="section-card" data-aos="fade-up" data-aos-delay="500">
+        <h2 class="section-title">Who Should Learn This Course?</h2>
+        <ul class="feature-list">
+            <li>✔️ Beginners and non-technical professionals.</li>
+            <li>✔️ BTech/BSc IT/CS students.</li>
+            <li>✔️ Career switchers entering IT field.</li>
+            <li>✔️ Freshers aiming for web development jobs.</li>
+        </ul>
+    </div>
+
+    <!-- Course Videos Section -->
+    <div class="section-card" data-aos="fade-up" data-aos-delay="600">
+        <h2 class="section-title">Course Videos</h2>
+        <div class="row g-4">
+            <div class="col-md-4" *ngFor="let video of videos; let i = index">
+                <div class="video-card shadow-sm rounded-4" (click)="openVideo(video.id)" data-aos="zoom-in"
+                    [attr.data-aos-delay]="i * 100">
+                    <img [src]="video.thumbnail" class="card-img-top" [alt]="video.title">
+                    <div class="card-body text-center">
+                        <h5 class="card-title small">{{ video.title }}</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- YouTube Modal -->
+<div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content rounded-4">
+            <div class="modal-header">
+                <h2 class="section-title mb-4">Course Videos</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" (click)="closeVideo()"></button>
+            </div>
+            <div class="modal-body p-0">
+                <iframe id="youtubeFrame" width="100%" height="500px" frameborder="0" allowfullscreen
+                    class="rounded-bottom-4"></iframe>
+            </div>
+        </div>
+    </div>
+</div>

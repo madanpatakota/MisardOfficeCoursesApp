@@ -1,0 +1,18 @@
+[
+  {
+    "ID": "c56a4180-65aa-42ec-a945-5fd21dec0538",
+    "TopicName": "functions",
+    "Description": "Functions in JavaScript are blocks of code designed to perform specific tasks.",
+    "Content": "A JavaScript function is defined with the `function` keyword, followed by a name, parentheses `()`, and a block of code `{}`. Example:\n\nfunction greet(name) {\n    return 'Hello, ' + name;\n}\nconsole.log(greet('John')); // Output: Hello, John <split> console.log(greet('John'));",
+    "CreatedBy": "Misard Student",
+    "CreatedDate": "10-10-2020"
+  },
+  {
+    "ID": "c56b8779-2d10-4986-a7f5-1afc17d80fea",
+    "TopicName": "Datatypes",
+    "Description": "JavaScript supports different data types for handling and manipulating values.",
+    "Content": "JavaScript data types include: \n- `String`: e.g., 'Hello'\n- `Number`: e.g., 123\n- `Boolean`: e.g., true or false\n- `Object`: e.g., {name: 'John', age: 30}\n- `Undefined` and `Null`. You can use `typeof` to check data types.",
+    "CreatedBy": "Misard Student",
+    "CreatedDate": "10-10-2020"
+  }
+]
