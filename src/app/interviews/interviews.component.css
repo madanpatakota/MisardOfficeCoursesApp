@@ -14,11 +14,12 @@
   min-height: 240px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: left;
+  cursor: pointer;
 }
 
 .orbit-block:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
 }
 
 .orbit-block h5 {
@@ -49,6 +50,7 @@
   flex-shrink: 0;
 }
 
+/* RESPONSIVE */
 @media (max-width: 576px) {
   .orbit-block {
     width: 100%;
@@ -59,7 +61,6 @@
     font-size: 1.5rem;
   }
 }
-
 
 .connect-wrapper {
   background: linear-gradient(135deg, #144264, #0c2d50);
@@ -104,20 +105,6 @@
 .small-text {
   font-size: 0.9rem;
   color: #ccc;
-}
-
-@media (max-width: 576px) {
-  .connect-title {
-    font-size: 1.5rem;
-  }
-
-  .connect-message {
-    font-size: 1rem;
-  }
-
-  .email-link {
-    font-size: 1rem;
-  }
 }
 
 .orbit-title {

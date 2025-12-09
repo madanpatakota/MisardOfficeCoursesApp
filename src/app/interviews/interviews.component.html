@@ -1,13 +1,23 @@
-<section class="orbit-section-wrapper text-white">
+<!-- ORBIT SECTION -->
+<section class="orbit-section-wrapper text-white" data-aos="fade-up" data-aos-duration="1200">
   <div class="container text-center">
-    <h2 class="orbit-title mb-5">Explore Interview Topics by Domain</h2>
+
+    <h2 class="orbit-title mb-5" data-aos="zoom-in" data-aos-duration="1200">
+      Explore Interview Topics by Domain
+    </h2>
 
     <div class="orbit-grid">
-      <!-- Frontend -->
-      <div class="orbit-block frontend">
+
+      <!-- FRONTEND -->
+      <div class="orbit-block frontend"
+           role="button"
+           (click)="goToIQS()"
+           data-aos="fade-up"
+           data-aos-duration="1100"
+           data-aos-delay="100">
         <h5>Frontend</h5>
         <ul>
-          <li><img src="https://img.icons8.com/color/48/html-5.png"  /> HTML</li>
+          <li><img src="https://img.icons8.com/color/48/html-5.png" /> HTML</li>
           <li><img src="https://img.icons8.com/color/48/css3.png" /> CSS</li>
           <li><img src="https://img.icons8.com/color/48/bootstrap.png" /> Bootstrap</li>
           <li><img src="https://img.icons8.com/color/48/javascript.png" /> JavaScript</li>
@@ -15,8 +25,13 @@
         </ul>
       </div>
 
-      <!-- Middleware -->
-      <div class="orbit-block middleware">
+      <!-- MIDDLEWARE -->
+      <div class="orbit-block middleware"
+           role="button"
+           (click)="goToIQS()"
+           data-aos="fade-up"
+           data-aos-duration="1100"
+           data-aos-delay="200">
         <h5>Middleware</h5>
         <ul>
           <li><img src="https://img.icons8.com/color/48/c-sharp-logo.png" /> C#.NET</li>
@@ -25,32 +40,41 @@
         </ul>
       </div>
 
-      <!-- Backend -->
-      <div class="orbit-block backend">
+      <!-- BACKEND -->
+      <div class="orbit-block backend"
+           role="button"
+           (click)="goToIQS()"
+           data-aos="fade-up"
+           data-aos-duration="1100"
+           data-aos-delay="300">
         <h5>Backend</h5>
         <ul>
           <li><img src="https://img.icons8.com/color/48/sql.png" /> SQL Server</li>
-           <li>
-    <img src="https://img.icons8.com/color/48/oracle-logo.png" /> Oracle
-  </li>
+          <li><img src="https://img.icons8.com/color/48/oracle-logo.png" /> Oracle</li>
         </ul>
       </div>
 
-      <!-- Cloud -->
-      <div class="orbit-block cloud">
+      <!-- CLOUD -->
+      <div class="orbit-block cloud"
+           role="button"
+           (click)="goToIQS()"
+           data-aos="fade-up"
+           data-aos-duration="1100"
+           data-aos-delay="400">
         <h5>Cloud</h5>
         <ul>
           <li><img src="https://img.icons8.com/color/48/azure-1.png" /> Azure</li>
-          <li>
-    <img src="https://img.icons8.com/color/48/amazon-web-services.png" /> AWS
-  </li>
+          <li><img src="https://img.icons8.com/color/48/amazon-web-services.png" /> AWS</li>
         </ul>
       </div>
+
     </div>
   </div>
 </section>
 
-<section class="connect-wrapper mt-5 py-5 px-3 text-white">
+
+<!-- CONNECT SECTION -->
+<section class="connect-wrapper mt-5 py-5 px-3 text-white" data-aos="fade-up" data-aos-duration="1200">
   <div class="container text-center">
     <h2 class="connect-title mb-3">💬 Want Help Cracking Your Interview?</h2>
     <p class="connect-message mb-4">
@@ -65,4 +89,3 @@
     </div>
   </div>
 </section>
-

@@ -175,8 +175,18 @@
 
             </div>
             <div class="modal-body p-0">
-                <iframe *ngIf="safeVideoUrl" [src]="safeVideoUrl" width="100%" height="500px" frameborder="0"
-                    allowfullscreen class="rounded-bottom-4 border border-primary"></iframe>
+                <!-- <iframe *ngIf="safeVideoUrl" [src]="safeVideoUrl" width="100%" height="500px" frameborder="0"
+                    allowfullscreen class="rounded-bottom-4 border border-primary"></iframe> -->
+                    <iframe *ngIf="safeVideoUrl" 
+        [src]="safeVideoUrl" 
+        width="100%" 
+        height="500" 
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+        allowfullscreen
+        class="rounded-bottom-4 border border-primary">
+</iframe>
+
             </div>
         </div>
     </div>

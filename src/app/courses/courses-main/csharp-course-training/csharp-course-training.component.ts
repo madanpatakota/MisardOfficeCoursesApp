@@ -766,9 +766,11 @@ A quick summary with shortcut keys wraps up the module for easy reference.`,
     }
 
     if (videoId) {
-      this.safeVideoUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
-        `https://www.youtube.com/embed/${videoId}`
-      );
+    this.safeVideoUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
+  `https://www.youtube.com/embed/${videoId}?origin=https://misardacademy.com&modestbranding=1&rel=0`
+);
+
+
 
       setTimeout(() => {
         const modal = new bootstrap.Modal(document.getElementById('chapterVideoModal'));
