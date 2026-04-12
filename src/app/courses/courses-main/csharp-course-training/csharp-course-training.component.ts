@@ -40,7 +40,7 @@ It also includes detailed interview preparation and best practices used in the s
   trainerInfo = `Madan Patakota, an experienced software architect and mentor with over 11 years of IT industry exposure, is the lead trainer for this course.
 He has worked across multiple domains including telecom, real estate, healthcare, and fintech.
 His strong command over C#, .NET Core, Angular, SQL Server, and Azure makes him a highly versatile full-stack expert.
-Madan believes in hands-on, real-time training that bridges the gap between theory and industry application.
+Madan believes in hands-on, real-time Program that bridges the gap between theory and industry application.
 Over the years, he has trained more than 200+ students, many of whom are now working in top companies.
 He provides personalized guidance, assignments, and mentorship to help learners become confident professionals.
 His structured methodology and commitment to each trainee’s success make this course a powerful career launcher.`;
@@ -67,7 +67,7 @@ His structured methodology and commitment to each trainee’s success make this 
     'Freshers aiming for a structured programming foundation in .NET technologies.',
     'Working professionals who want to transition into backend/full-stack roles.',
     'Career switchers looking to enter the IT industry with job-ready skills.',
-    'BCA/MCA/B.Tech graduates seeking job-focused C# training with real-time guidance.'
+    'BCA/MCA/B.Tech graduates seeking job-focused C# Program with real-time guidance.'
   ];
 
 
