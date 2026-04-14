@@ -18,7 +18,7 @@ import { AngularMainCourseComponent } from './csharp-course-training/angular-mai
 import { AspnetcoreComponent } from './aspnetcore/aspnetcore.component';
 
 import { TypescriptTrainingComponent } from './typescript-training/typescript-training.component';
-import { SqlServerTrainingComponent } from './sql-server-training/sql-server-training.component';
+ import { SqlServerTrainingComponent } from './sql-server-training/sql-server-training.component';
 
 @NgModule({
   declarations: [
