@@ -21,6 +21,11 @@
         <ul class="list-unstyled mb-4">
           <li class="feature-point" *ngIf="course.hasIndex">
             <a [routerLink]="course.indexlink" class="feature-link">
+              <i class="fas fa-book-open me-2 text-primary"></i> Course Index 
+            </a>
+          </li>
+          <li class="feature-point" *ngIf="!course.hasIndex">
+            <a [routerLink]="course.MainLink" class="feature-link">
               <i class="fas fa-book-open me-2 text-primary"></i> Course Index
             </a>
           </li>

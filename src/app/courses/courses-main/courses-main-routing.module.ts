@@ -8,6 +8,7 @@ import { CsharpCourseTrainingComponent } from './csharp-course-training/csharp-c
 import { AngularMainCourseComponent } from './csharp-course-training/angular-main-course/angular-main-course.component';
 import { AspnetcoreComponent } from './aspnetcore/aspnetcore.component';
 import { TypescriptTrainingComponent } from './typescript-training/typescript-training.component';
+import { SqlServerTrainingComponent } from './sql-server-training/sql-server-training.component';
 
 const appCourseMainRoutes: Routes = [
     {
@@ -19,6 +20,7 @@ const appCourseMainRoutes: Routes = [
             { path: 'angular-training', component: AngularMainCourseComponent },
             { path: 'aspnetcore-training', component: AspnetcoreComponent },
             { path: 'typescript-training', component: TypescriptTrainingComponent },
+            { path: 'sqlserver-training', component: SqlServerTrainingComponent  },
             { path: '**', redirectTo: 'html-training', pathMatch: 'full' }
         ]
     }

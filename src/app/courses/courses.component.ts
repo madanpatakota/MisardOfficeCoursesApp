@@ -16,7 +16,7 @@ export class CoursesComponent implements OnInit {
       hasVideos: true,
       hasIQ: true,
       hasAssignments: true,
-      hasIndex: true,
+      hasIndex: false,
       MainLink: 'courses-main/html-training'
     },
     {
@@ -74,6 +74,17 @@ export class CoursesComponent implements OnInit {
       hasIndex: true,
       MainLink: 'courses-main/aspnetcore-training'
     },
+    {
+  title: 'SQL Server',
+  image: '../../assets/images/sql-server.jpg', // make sure image exists
+  description: 'Master SQL Server from basics to advanced queries, joins, performance tuning, and real-time database concepts.',
+  indexlink: '/courses-index/sqlserver-training',
+  hasVideos: true,
+  hasIQ: true,
+  hasAssignments: true,
+  hasIndex: false,
+  MainLink: 'courses-main/sqlserver-training'
+},
     {
       title: 'Entity Framework',
       image: '../../assets/images/EF.png',
