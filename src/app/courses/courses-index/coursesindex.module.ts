@@ -8,6 +8,7 @@ import { AspnetcoreComponent } from './aspnetcore/aspnetcore.component';
 import { CsharpComponent } from './csharp/csharp.component';
 import { RouterModule } from '@angular/router';
 import { CoursesIndexComponent } from './coursesindex.component';
+import { JavascriptprojectsComponent } from './javascript/javascriptprojects/javascriptprojects.component';
 // import { CoursesMainComponent } from '../courses-main/courses-main.component';
 
 
@@ -19,6 +20,7 @@ import { CoursesIndexComponent } from './coursesindex.component';
     AspnetcoreComponent,
     CsharpComponent,
     CoursesIndexComponent,
+    JavascriptprojectsComponent,
     // CoursesMainComponent
   ],
   imports: [

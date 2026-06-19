@@ -25,7 +25,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MeetYourMentorsComponent } from './meet-your-mentors/meet-your-mentors.component';
 
 
-
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   // { path: 'courses', component: CoursesComponent },
