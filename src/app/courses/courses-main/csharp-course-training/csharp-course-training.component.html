@@ -113,7 +113,7 @@
                             <li *ngFor="let lesson of chapter.lessons"
                                 class="list-group-item d-flex align-items-center video-lesson-item">
                                 <!-- <i class="bi bi-play-circle text-primary me-2">{{ lesson.name }}</i> -->
-                                <i class="bi bi-play-circle text-primary me-2"></i> {{ lesson.name }}
+                                <i class="bi bi-play-circle text-primary me-2"></i> {{ lesson?.name }}
                                 <!-- <button class="btn btn-sm btn-outline-primary ms-auto"
                                     (click)="openVideo(chapter.title, lesson)" data-bs-toggle="modal"
                                     data-bs-target="#chapterVideoModal">

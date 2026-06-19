@@ -343,79 +343,241 @@ A quick summary with shortcut keys wraps up the module for easy reference.`,
       "describes": "This chapter focuses on methods in C#. It covers method overloading, method hiding, and the use of ref and out parameters. It also introduces asynchronous programming with async and await keywords, exception handling, and custom exceptions.",
       "lessons": [
         {
-          "name": "Methods with ref and out parameters",
-          "id": ""
+          "name": "Methods with ref",
+          "id": "Jb8wBuae4Cc"
         },
         {
-          "name": "Asynchronous Methods with async and await",
-          "id": ""
+          "name": "Methods with out",
+          "id": "kToO0w-eTeE"
         },
         {
-          "name": "Methods with Extension methods",
-          "id": ""
+          "name": "Methods with ref vs out",
+          "id": "DOM8zSgbbhM"
         },
         {
-          "name": "Exceptions",
-          "id": ""
+          "name": "Methods with Params Parameter",
+          "id": "dm2-8RMySrw"
         },
         {
-          "name": "compile-time exception",
-          "id": ""
+          "name": "Methods with Optional Parameter",
+          "id": "GCr6SDhEzMY"
         },
         {
-          "name": "Run-time exception",
-          "id": ""
+          "name": "Methods with Named Parameter",
+          "id": "iQsrfmRdF6w"
         },
         {
-          "name": "Try-catch-finally for runtime exceptions",
-          "id": ""
+          "name": "Generic Types of Parameters in methods",
+          "id": "LsXSyMdEHzg"
         },
         {
-          "name": "threw new Exception",
-          "id": ""
+          "name": "Understanding Synchronous Calls",
+          "id": "a-6WfLN7B-E"
         },
         {
-          "name": "Custom Exception",
-          "id": ""
-        }
+          "name": "Passing Entity Classes as Generic Parameter",
+          "id": "MDcSJggKTrw"
+        },
+        {
+          "name": "Program on Synchronous Calls",
+          "id": "mQaR4AvH22o"
+        },
+        {
+          "name": "Preparing Additional for Trainer Example",
+          "id": "tuwq8N9lrjk"
+        },
+        {
+          "name": "Thread.Sleep() and StopWatch",
+          "id": "jkh2QudsthE"
+        },
+        {
+          "name": "What is Task and Importance of Task",
+          "id": "ujigqZ0mrzg"
+        },
+        {
+          "name": "Planning Before Writing Task Programs",
+          "id": "9FL77JiQXIw"
+        },
+        {
+          "name": "Converting Synchoronous Calls into Tasks",
+          "id": "1Pabe8DXcIY"
+        },
+        {
+          "name": "Importance of Task.WaitAll()",
+          "id": "xG-1R7iwHeA"
+        },
+        {
+          "name": "Using Stopwatch to Calculate Task Execution Time",
+          "id": "xvSxFvYiaJY"
+        },
+        {
+          "name": " Adding Wait Method to Each Task",
+          "id": "jLYYPvCZcW8"
+        },
+        {
+          "name": "Changing Return Type from void to Task",
+          "id": "P1q5Es9WoZY"
+        },
+      {
+          "name": "Changing Return Type from Task to Task String",
+          "id": "6rE6HGopag4"
+        },
+        {
+          "name": "Use Task.WaitAll() to Wait for All Tasks Instead of Waiting for Each Task Separately",
+          "id": "_vqy4kQ9oTw"
+        },
+      {
+          "name": "Working with Task.WhenAll()",
+          "id": "FUJ22QfeiMY"
+        },
+      {
+          "name": "Updating Method Signature using async and await",
+          "id": "AFdtFog27F0"
+        },
+        {
+          "name": "Uses of Task.Delay() with await",
+          "id": "S-GwtpiExQw"
+        },
+        {
+          "name": "Async and Await Program Flow Explanation",
+          "id": "UsduKtLDxB0"
+        },
+      {
+          "name": "Understanding Extension Methods in C#",
+          "id": "mhEPVMblaEU"
+        },
+      {
+          "name": "Program on Extension Methods",
+          "id": "TmeLYuidd8w"
+        },
+        {
+          "name": "Adding Extension Methods to Existing string Type",
+          "id": "v_mdyooIP2E"
+        },
+      {
+          "name": "What is Exception in C#",
+          "id": "1IG967pOxIo"
+        },
+      {
+          "name": "Compile-Time Errors – Theory",
+          "id": "fMoYXT0Hihc"
+        },
+      {
+          "name": "Understanding Runtime Errors – Theory",
+          "id": "-ioVyRLAlBo"
+        },
+      {
+          "name": "Handling Runtime Errors using Try-Catch",
+          "id": "UpLyGTN6KVQ"
+        },
+        {
+          "name": " Use of finally Block in C#",
+          "id": "vgzxZ6Svt_w"
+        },
+        {
+          "name": "Multiple Try-Catch-Finally Blocks in Same Method",
+          "id": "zFNE6C4s4yk"
+        },
+        {
+          "name": "Single Try with Multiple Catch Blocks",
+          "id": "IZxysqzAW4k"
+        },
+        {
+          "name": "Converting Exception Messages into User-Friendly Messages",
+          "id": "-4rDhHHoEr4"
+        },
+        {
+          "name": "Using throw Keyword to Trigger Exceptions Manually",
+          "id": "eo3Ft32ll2A"
+        },
+        {
+          "name": "What is Exception Class in C#",
+          "id": "13GSvXIbMyU"
+        },
+        {
+          "name": "Creating and Using Custom Exceptions in C#",
+          "id": "hSkpz8u7ETI"
+        },
       ]
+      
     },
     {
       "title": "Chapter 4: Data Containers",
       "describes": "This chapter introduces various data structures in C#. It covers collections, arrays, lists, dictionaries, hash tables, tuples, and hash sets. The chapter emphasizes the importance of choosing the right data structure for different scenarios.",
       "lessons": [
         {
-          "name": "Introduction about Collections",
-          "id": ""
+          "name": "Welcome to Step4",
+          "id": "EMHXiWKVQlE"
         },
         {
-          "name": "Array",
-          "id": ""
+          "name": "Create a New Console Application in C#",
+          "id": "d3GyAZhI6Es"
         },
         {
-          "name": "Array List",
-          "id": ""
+          "name": "What is Collection in C#?",
+          "id": "G9gnF1-htaY"
         },
         {
-          "name": "List",
-          "id": ""
+          "name": "Arrays in C# – Theory Explanation",
+          "id": "qUAP5FjAccA"
         },
         {
-          "name": "Dictionary",
-          "id": ""
+          "name": "Preparing Arrays in C#",
+          "id": "ykYhoRLVIdQ"
         },
         {
-          "name": "Hash Table",
-          "id": ""
+          "name": "How to Use Array Class in C#",
+          "id": "l6kCvvqwkbs"
         },
         {
-          "name": "Tuple",
-          "id": ""
+          "name": "What is ArrayList in C#?",
+          "id": "hfuEtN-S8lM"
         },
         {
-          "name": "HashSet",
-          "id": ""
-        }
+          "name": "Real-Time Use Cases of ArrayList",
+          "id": "Im9fT6iJOKc"
+        },
+        {
+          "name": "What is List Collection in C#?",
+          "id": "i6RACTZmzcs"
+        },
+        {
+          "name": "Add, Remove, Update, Operations in List",
+          "id": "Mxl-BJR2fAA"
+        },
+        {
+          "name": "What is Dictionary in C#?",
+          "id": "XkN1CPLodxc"
+        },
+        {
+          "name": "Add, Remove, Update, Operations in Dictionary",
+          "id": "0BAAOc81_N8"
+        },
+        {
+          "name": "What is Hashtable in C#?",
+          "id": "kDhruTBtP3I"
+        },
+        {
+          "name": "Add, Remove, Update, Operations in Hashtable",
+          "id": "2K-vK6LDPtU"
+        },
+        {
+          "name": "Introduction to HashSet in C#",
+          "id": "EIKkSnayX0U"
+        },
+        {
+          "name": "Understanding HashSet with Program",
+          "id": "s-9VQcEESRY"
+        },
+        {
+          "name": "What is Tuple in C#?",
+          "id": "Z2L0IMe0J3E"
+        },
+        {
+          "name": "Real-Time Usage of Tuple in C#",
+          "id": "dCfvcWDeKUA"
+        },
+      
       ]
     },
     {
@@ -423,44 +585,91 @@ A quick summary with shortcut keys wraps up the module for easy reference.`,
       "describes": "This chapter explains access modifiers in C#. It covers the different access levels (private, public, protected, internal) and their usage in classes and assemblies. The chapter emphasizes the importance of encapsulation and data hiding in software design.",
       "lessons": [
         {
-          "name": "Introduction on C# Access Modifiers",
-          "id": ""
+          "name": "Welcome to Step-5",
+          "id": "9m1RGHm804c"
         },
         {
-          "name": "Introduction on Assembly",
-          "id": ""
+          "name": "Topics Covered in Step-5",
+          "id": "IwG-OVq_RNg"
+        },
+        {
+          "name": "Introduction to Access Modifiers in C#",
+          "id": "BxpRmpDFzQ0"
+        },
+        {
+          "name": "Introduction to Assembly Files in C#",
+          "id": "mfyDasbeW1Q"
+        },
+        {
+          "name": "Difference Between Executable and Library Files",
+          "id": "qr1i1JEw7zQ"
+        },
+        {
+          "name": "Types of Assemblies in C#",
+          "id": "31tx6wAWBpM"
         },
         {
           "name": "Use of Assemblies in Building Project Relationships",
-          "id": ""
+          "id": "0lq9G8PdvNU"
         },
         {
-          "name": "Internal Class",
-          "id": ""
+          "name": "Solution Planning for Access Modifiers",
+          "id": "kPI5BkpHQvQ"
         },
         {
-          "name": "Private",
-          "id": ""
+          "name": "Create the Console Application as per Plan",
+          "id": "4IL2aDyBKWE"
         },
         {
-          "name": "Protected",
-          "id": ""
+          "name": "Private Access Modifier – Explanation",
+          "id": "mKB6sYX3kT8"
         },
         {
-          "name": "Internal",
-          "id": ""
+          "name": "Private Access Modifier – Program",
+          "id": "pqbbvf8QKuE"
         },
         {
-          "name": "Protected Internal",
-          "id": ""
+          "name": "Protected Access Modifier – Explanation",
+          "id": "P-w-545BWX0"
         },
         {
-          "name": "Public",
-          "id": ""
+          "name": "Protected Access Modifier – Program",
+          "id": "n90-4Ro6xCQ"
         },
         {
-          "name": "Access Modifiers in C# - Comparison Table",
-          "id": ""
+          "name": "Internal Access Modifier – Explanation",
+          "id": "KfhkaRKdERg"
+        },
+        {
+          "name": "Internal Access Modifier – Program",
+          "id": "uaK9LIiYjX0"
+        },
+        {
+          "name": "Protected Internal Access Modifier – Explanation",
+          "id": "riEZBzX1kpY"
+        },
+         {
+          "name": "Protected Internal Access Modifier – Program",
+          "id": "G1AVVCxR6vc"
+        },
+         {
+          "name": "Public Access Modifier – Explanation",
+          "id": "TaA7tFxUeV4"
+        }, {
+          "name": "Public Access Modifier – Program",
+          "id": "QsAyeOeNqIY"
+        }, {
+          "name": "Difference Between Public Class and Internal Class",
+          "id": "GTUV0mmxM0M"
+        }, {
+          "name": "Comparison Table of Access Modifiers",
+          "id": "rSWHWJAVWGs"
+        }, {
+          "name": "Comparison Table of Public Class and Internal Class",
+          "id": "GyYXi_4lOQQ"
+        },{
+          "name": "Final Words on Step-5",
+          "id": "N6H7mqQ-400"
         }
       ]
     },
@@ -469,99 +678,230 @@ A quick summary with shortcut keys wraps up the module for easy reference.`,
       "describes": "This chapter introduces delegates in C#. It covers the concept of delegates, their usage as method signatures, and the differences between Func, Action, and Predicate delegates. The chapter also discusses anonymous methods and lambda expressions.",
       "lessons": [
         {
-          "name": "Real time Delegate Analogy",
-          "id": ""
+          "name": "Topics Covered in Step-6",
+          "id": "hA2UG69Pxg8"
         },
         {
-          "name": "Introduction on C# Delegates",
-          "id": ""
+          "name": "Real-Time Delegate Analogy",
+          "id": "egubTPCxIq0"
         },
         {
-          "name": "Use Delegate as a method signature",
-          "id": ""
+          "name": "Introduction to Delegates in C#",
+          "id": "rOjLds6c_f8"
         },
         {
-          "name": "Anonymous methods",
-          "id": ""
+          "name": "Creating the Console App for Step-6",
+          "id": "vdljDA4X0YM"
         },
         {
-          "name": "Converting Anonymous method to lambda Expression",
-          "id": ""
+          "name": "Create a Delegate – Program",
+          "id": "dcWpAvscy_Q"
         },
         {
-          "name": "built-in Delegates (Func, Action, Predicate)",
-          "id": ""
+          "name": "Creating Delegates with Return Types",
+          "id": "zJ9-rSu8ffs"
         },
         {
-          "name": "Func delegate",
-          "id": ""
+          "name": "Understanding Anonymous Methods",
+          "id": "xaCXLHnfFhc"
         },
         {
-          "name": "Action delegate",
-          "id": ""
+          "name": "Anonymous Methods with Void Return Types",
+          "id": "J8KdKW9Mht0"
         },
         {
-          "name": "Predicate delegate",
-          "id": ""
+          "name": "Anonymous Methods with Different Data Types",
+          "id": "298Uil0wFW8"
         },
         {
-          "name": "Func vs Action vs Predicate",
-          "id": ""
-        }
+          "name": "Converting Anonymous Methods to Lambda Expressions",
+          "id": "HSatEd3BjZ0"
+        },
+        {
+          "name": "Preparing Lambda Expressions",
+          "id": "PLp36sJpRUY"
+        },
+        {
+          "name": "Applying Lambdas with Different Return Types",
+          "id": "VokLAhBe6gU"
+        },
+        {
+          "name": "Understanding Built-in Delegates",
+          "id": "0k9Wuh_F68s"
+        },
+        {
+          "name": "Understanding Func Built-in Delegate",
+          "id": "b7MI4wE8jiU"
+        },
+        {
+          "name": "Program on Func Built-in Delegate",
+          "id": "txane0N6KH4"
+        },
+        {
+          "name": "Understanding Action Built-in Delegate",
+          "id": "RLRvEWSl4WU"
+        },
+        {
+          "name": "Program on Action Delegate",
+          "id": "_V69F_WuLI4"
+        },
+        {
+          "name": "Understanding Predicate Built-in Delegate",
+          "id": "2FfoLO4fdng"
+        },
+        {
+          "name": "Program on Predicate Delegate",
+          "id": "adu-dZ-DPc4"
+        },{
+          "name": "Comparison Table of Built-in Delegates",
+          "id": "dvO6TJ7k8-c"
+        },
+        {
+          "name": "Final Summary of Delegates and Lambda Expressions",
+          "id": "xvJCSXWV1ig"
+        },
       ]
     },
     {
-      "title": "Chapter 7: Dependency Injection",
+      "title": "Chapter 7: Dependency Injection and SOLID Principles",
       "describes": "This chapter covers the concept of Dependency Injection (DI) in C#. It explains the importance of DI in software design, its advantages, and how to implement it in real-time projects. The chapter emphasizes the role of DI in achieving loose coupling and enhancing testability.",
       "lessons": [
         {
-          "name": "What is Dependency Injection",
-          "id": ""
+          "name": "Welcome to Step7 (Revision from Step1 to Step6) & – SOLID Principles and Design Patterns",
+          "id": "6MjRAzz7ydc"
         },
         {
-          "name": "How to Apply the Dependency Injection",
-          "id": ""
+          "name": "Topics Covered in Step-7",
+          "id": "SnzvLrGycgY"
         },
         {
-          "name": "Importance of the DI in Real time Projects",
-          "id": ""
-        }
+          "name": "Understanding SOLID Principles",
+          "id": "BOFmZpf3F4g"
+        },
+        {
+          "name": "Creating the Solution to Implement SOLID Principles",
+          "id": "M7Orw3_WiaE"
+        },
+        {
+          "name": "Understanding the Problem Without SRP",
+          "id": "Scob2JC-IzA"
+        },
+        {
+          "name": " Solving the Problem using SRP",
+          "id": "z6QA2PiRg5w"
+        },
+        {
+          "name": "What is the Open-Closed Principle (OCP)",
+          "id": "BbyL6l0C0cg"
+        },
+        {
+          "name": "Understanding the Problem Without OCP",
+          "id": "8lk-GLByBOI"
+        },
+        {
+          "name": "Solving the Problem using OCP",
+          "id": "otW0hqWOlt4"
+        },
+        {
+          "name": "What is Liskov Substitution Principle (LSP)",
+          "id": "6vzDiLZadd4"
+        },
+        {
+          "name": "Understanding the Problem of LSP",
+          "id": "7w-AQB4vc9k"
+        },
+        {
+          "name": "Solving the Problem using LSP",
+          "id": "fGqmpOpKIPg"
+        },
+        {
+          "name": "What is Interface Segregation Principle (ISP)",
+          "id": "E0U-4jbDXbM"
+        },
+        {
+          "name": "Understanding the Problem of ISP",
+          "id": "n5PxuEAcwto"
+        },
+        {
+          "name": "Solving the Problem using ISP",
+          "id": "WUfL5Kl9oo8"
+        },
+        {
+          "name": "What is Dependency Inversion Principle (DIP)",
+          "id": "lFezMp3GcDE"
+        },
+         {
+          "name": "Understanding the Problem Without DIP",
+          "id": "yTbILzeZNPY"
+        },
+        {
+          "name": "Solving the Problem using DIP",
+          "id": "OX1D5TnGh6Q"
+        },
+        {
+          "name": "Understanding What a Design Pattern Is",
+          "id": "ks8iaV7Lqmw"
+        }, 
+        {
+          "name": "Types of Design Patterns in C#",
+          "id": "U_R2wXKHpr8"
+        },
+        {
+          "name": "Understanding the Real-Time Flow of Design Patterns",
+          "id": "VT-8xC_JIdg"
+        },
+        {
+          "name": "Difference Between SOLID Principles and Design Patterns",
+          "id": "Xa5tha6BY2U"
+        },
+        {
+          "name": "Real-Time Flow Using Repository and Dependency Injection",
+          "id": "y_YlqQS6YRU"
+        },{
+          "name": "Creating the Solution and Configuring the Layers",
+          "id": "bJcY-LiimxI"
+        },
+        {
+          "name": "Writing Basic Code in Each Layer and Designing the Repository",
+          "id": "sZDq9tLsr6w"
+        },
+        {
+          "name": "Adding a New Method and Understanding the Problem",
+          "id": "D4Suv8dN3f4"
+        },
+        {
+          "name": "Prepare Interfaces for Concrete Classes",
+          "id": "cZnf0BqT4Yw"
+        },
+
+        {
+          "name": "Removing Dependencies in Class Constructors Using Manual Dependency Injection",
+          "id": "VfDoGOjhPcs"
+        },
+{
+          "name": "Preparing the Dependency Injection Extension to Register Dependencies",
+          "id": "mDR88fY4WHM"
+        },
+        {
+          "name": "Recap of What We Have Done So Far in the Application",
+          "id": "qNYYjC5aNVI"
+        },
+        {
+          "name": "Final Summary of Step-7",
+          "id": "k9FBHQoVS88"
+        },
+
+
+
+      
+        
+
+        
+
       ]
     },
-    {
-      "title": "Chapter 8: SOLID Principles",
-      "describes": "This chapter introduces the SOLID principles of object-oriented design. It covers each principle in detail, explaining its significance and how to apply it in C# programming. The chapter emphasizes the importance of following these principles for building maintainable and scalable software.",
-      "lessons": [
-        {
-          "name": "Introduction of SOLID Principles",
-          "id": ""
-        },
-        {
-          "name": "Advantages of SOLID Principles",
-          "id": ""
-        },
-        {
-          "name": "S - (Single Responsibility Principle)",
-          "id": ""
-        },
-        {
-          "name": "O - (Open-Closed Principle)",
-          "id": ""
-        },
-        {
-          "name": "L - (Liskov Substitution Principle)",
-          "id": ""
-        },
-        {
-          "name": "I - (Interface Segregation Principle)",
-          "id": ""
-        },
-        {
-          "name": "D - (Dependency Inversion Principle)",
-          "id": ""
-        }
-      ]
-    },
+    
+  
    
   ];
 
