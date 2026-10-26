@@ -1,0 +1,112 @@
+<main class="auth-page">
+  <div class="auth-layout">
+    <section class="auth-intro" aria-labelledby="auth-intro-title">
+      <a class="brand-mark" routerLink="/" aria-label="Misard Developer Platform home">
+        <img src="assets/images/favicon.png" alt="" />
+        <span>Misard <span class="brand-light">Developer Platform</span></span>
+      </a>
+
+      <div class="intro-copy">
+        <p class="eyebrow">LEARN. BUILD. DELIVER.</p>
+        <h1 id="auth-intro-title">Build your next chapter.</h1>
+        <p>Access practical programs, real-world projects, and resources for your developer journey.</p>
+      </div>
+
+      <p class="intro-note">A place for curious minds and hands-on builders.</p>
+    </section>
+
+    <section class="auth-panel" [attr.aria-labelledby]="isSignup ? 'signup-title' : 'login-title'">
+      <div class="auth-heading">
+        <p class="eyebrow">{{ isSignup ? 'GET STARTED' : 'WELCOME BACK' }}</p>
+        <h2 [id]="isSignup ? 'signup-title' : 'login-title'">
+          {{ isSignup ? 'Create your account' : 'Sign in to your account' }}
+        </h2>
+        <p class="heading-copy">
+          {{ isSignup ? 'Join the community and start building.' : 'Enter your details to continue learning.' }}
+        </p>
+      </div>
+
+      <form [formGroup]="form" (ngSubmit)="submit()" novalidate>
+        <div class="field-group" *ngIf="isSignup">
+          <label for="auth-name">Full name</label>
+          <input
+            id="auth-name"
+            class="form-control"
+            type="text"
+            formControlName="name"
+            autocomplete="name"
+            placeholder="Your name"
+            [attr.aria-invalid]="hasError('name', 'required') || hasError('name', 'maxlength')"
+            [attr.aria-describedby]="hasError('name', 'required') || hasError('name', 'maxlength') ? 'name-error' : null"
+          />
+          <small class="field-error" id="name-error" *ngIf="hasError('name', 'required')">Please enter your name.</small>
+          <small class="field-error" id="name-error" *ngIf="hasError('name', 'maxlength')">Name must be 100 characters or fewer.</small>
+        </div>
+
+        <div class="field-group">
+          <label for="auth-email">Email address</label>
+          <input
+            id="auth-email"
+            class="form-control"
+            type="email"
+            formControlName="email"
+            autocomplete="email"
+            placeholder="you@example.com"
+            [attr.aria-invalid]="hasError('email', 'required') || hasError('email', 'email')"
+            [attr.aria-describedby]="hasError('email', 'required') || hasError('email', 'email') ? 'email-error' : null"
+          />
+          <small class="field-error" id="email-error" *ngIf="hasError('email', 'required')">Please enter your email address.</small>
+          <small class="field-error" id="email-error" *ngIf="hasError('email', 'email')">Enter a valid email address.</small>
+        </div>
+
+        <div class="field-group">
+          <label for="auth-password">Password</label>
+          <input
+            id="auth-password"
+            class="form-control"
+            type="password"
+            formControlName="password"
+            [autocomplete]="isSignup ? 'new-password' : 'current-password'"
+            placeholder="At least 8 characters"
+            [attr.aria-invalid]="hasError('password', 'required') || hasError('password', 'minlength')"
+            [attr.aria-describedby]="hasError('password', 'required') || hasError('password', 'minlength') ? 'password-error' : null"
+          />
+          <small class="field-error" id="password-error" *ngIf="hasError('password', 'required')">Please enter a password.</small>
+          <small class="field-error" id="password-error" *ngIf="hasError('password', 'minlength')">Password must be at least 8 characters.</small>
+        </div>
+
+        <div class="field-group" *ngIf="isSignup">
+          <label for="auth-confirm-password">Confirm password</label>
+          <input
+            id="auth-confirm-password"
+            class="form-control"
+            type="password"
+            formControlName="confirmPassword"
+            autocomplete="new-password"
+            placeholder="Re-enter your password"
+            [attr.aria-invalid]="hasError('confirmPassword', 'required') || (submitted && form.hasError('passwordsMismatch'))"
+            [attr.aria-describedby]="hasError('confirmPassword', 'required') || (submitted && form.hasError('passwordsMismatch')) ? 'confirm-password-error' : null"
+          />
+          <small class="field-error" id="confirm-password-error" *ngIf="hasError('confirmPassword', 'required')">Please confirm your password.</small>
+          <small class="field-error" id="confirm-password-error" *ngIf="submitted && form.hasError('passwordsMismatch')">Passwords do not match.</small>
+        </div>
+
+        <div class="form-message" role="status" *ngIf="submitted && form.valid">
+          {{ formMessage }}
+        </div>
+
+        <button class="submit-button" type="submit">
+          {{ isSignup ? 'Create account' : 'Sign in' }}
+          <span aria-hidden="true">&rarr;</span>
+        </button>
+      </form>
+
+      <p class="switch-mode">
+        {{ isSignup ? 'Already have an account?' : 'New to the platform?' }}
+        <a [routerLink]="isSignup ? '/login' : '/signup'">
+          {{ isSignup ? 'Sign in' : 'Create an account' }}
+        </a>
+      </p>
+    </section>
+  </div>
+</main>

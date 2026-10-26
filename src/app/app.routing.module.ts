@@ -23,6 +23,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { CoursesComponent } from './courses/courses.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MeetYourMentorsComponent } from './meet-your-mentors/meet-your-mentors.component';
+import { AuthComponent } from './auth/auth.component';
 
 
 
@@ -31,6 +32,8 @@ const appRoutes: Routes = [
   // { path: 'courses', component: CoursesComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: 'iqs', component: InterviewsComponent },
+  { path: 'login', component: AuthComponent, data: { mode: 'login' } },
+  { path: 'signup', component: AuthComponent, data: { mode: 'signup' } },
 
   { path: 'bootstrap-training', component: BootstrapComponent },
   { path: 'html-training', component: HtmlComponent },
@@ -65,6 +68,7 @@ const appRoutes: Routes = [
     CarouselComponent,
     HomeComponent,
     HomealertComponent,
+    AuthComponent,
     TemplatesComponent,
     AngularArticlesComponent,
     JavascriptArticlesComponent,
