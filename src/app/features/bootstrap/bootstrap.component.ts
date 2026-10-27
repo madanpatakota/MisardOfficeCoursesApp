@@ -6,7 +6,7 @@ import {
   ViewChild,
   ViewContainerRef,
 } from '@angular/core';
-import { TemplateService } from '../services/templateservices';
+import { TemplateService } from '../../core/services/templateservices';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({

@@ -2,6 +2,16 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
 
+## Application organization
+
+Application code is grouped by responsibility under `src/app`:
+
+- `core/` contains app-wide layout and singleton services.
+- `core/core.module.ts` exports the shared app layout.
+- `shared/` contains reusable UI components and their module.
+- `features/` contains user-facing areas such as auth, articles, courses, and projects.
+- `app.module.ts` owns eagerly loaded declarations; `app-routing.module.ts` owns root routes.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.

@@ -5,7 +5,7 @@ import {
   TemplateRef,
   ViewChild,
 } from '@angular/core';
-import { TemplateService } from 'src/app/services/templateservices';
+import { TemplateService } from '../../../core/services/templateservices';
 
 @Component({
   selector: 'app-templates',
