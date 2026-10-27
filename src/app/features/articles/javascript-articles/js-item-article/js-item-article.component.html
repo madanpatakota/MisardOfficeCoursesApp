@@ -8,11 +8,12 @@
   </div>
 </div> -->
 
-<div class="container mt-4">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">{{ item.TopicName }}</h5>
-        <p class="card-text">{{ item.Description }}</p>
+<ng-container *ngIf="item as article">
+  <div class="container mt-4">
+      <div class="card">
+        <div class="card-body">
+        <h5 class="card-title">{{ article.TopicName }}</h5>
+        <p class="card-text">{{ article.Description }}</p>
   
         <div class="mt-4">
           <h6>What is a JavaScript Function?</h6>
@@ -26,7 +27,7 @@
           <!-- <p>
             A JavaScript function is defined with the <code>function</code> keyword, followed by a name, parentheses <code>()</code>, and a block of code <code>{}</code>.
           </p> -->
-          <pre><code class="language-javascript">{{ item.Content }}</code></pre>
+          <pre><code class="language-javascript">{{ article.Content }}</code></pre>
         </div>
   
         <div class="mt-4">
@@ -38,11 +39,10 @@
         </div>
   
         <footer class="mt-4">
-          <p class="text-muted">Created by: {{ item.CreatedBy }}</p>
-          <p class="text-muted">Created on: {{ item.CreatedDate }}</p>
+          <p class="text-muted">Created by: {{ article.CreatedBy }}</p>
+          <p class="text-muted">Created on: {{ article.CreatedDate }}</p>
         </footer>
       </div>
     </div>
 </div>
-  
-  
+</ng-container>

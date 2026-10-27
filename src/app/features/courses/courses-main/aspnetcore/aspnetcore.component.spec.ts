@@ -1,15 +1,14 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { AspnetcoreComponent } from './aspnetcore.component';
+import { configureComponentTest } from 'src/app/testing/component-test-setup';
 
 describe('AspnetcoreComponent', () => {
   let component: AspnetcoreComponent;
   let fixture: ComponentFixture<AspnetcoreComponent>;
 
   beforeEach(() => {
-    TestBed.configureTestingModule({
-      declarations: [AspnetcoreComponent]
-    });
+    configureComponentTest(AspnetcoreComponent);
     fixture = TestBed.createComponent(AspnetcoreComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

@@ -1,15 +1,14 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { JsItemArticleComponent } from './js-item-article.component';
+import { configureComponentTest } from 'src/app/testing/component-test-setup';
 
 describe('JsItemArticleComponent', () => {
   let component: JsItemArticleComponent;
   let fixture: ComponentFixture<JsItemArticleComponent>;
 
   beforeEach(() => {
-    TestBed.configureTestingModule({
-      declarations: [JsItemArticleComponent]
-    });
+    configureComponentTest(JsItemArticleComponent);
     fixture = TestBed.createComponent(JsItemArticleComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

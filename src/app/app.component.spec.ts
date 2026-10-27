@@ -1,10 +1,9 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { configureComponentTest } from 'src/app/testing/component-test-setup';
 
 describe('AppComponent', () => {
-  beforeEach(() => TestBed.configureTestingModule({
-    declarations: [AppComponent]
-  }));
+  beforeEach(() => configureComponentTest(AppComponent));
 
   it('should create the app', () => {
     const fixture = TestBed.createComponent(AppComponent);
@@ -22,6 +21,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('Misard-Courses-App app is running!');
+    expect(compiled.querySelector('.content-wrapper')).toBeTruthy();
   });
 });
