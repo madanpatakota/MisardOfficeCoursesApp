@@ -3,7 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { AwsComponent } from './features/articles/aws/aws.component';
 import { AzureComponent } from './features/articles/azure/azure.component';
 import { HtmlComponent } from './features/articles/html/html.component';
-import { AuthComponent } from './features/auth/auth.component';
 import { BootstrapComponent } from './features/bootstrap/bootstrap.component';
 import { HomeComponent } from './features/home/home.component';
 import { InterviewsComponent } from './features/interview-prep/interviews/interviews.component';
@@ -15,8 +14,16 @@ const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: 'iqs', component: InterviewsComponent },
-  { path: 'login', component: AuthComponent, data: { mode: 'login' } },
-  { path: 'signup', component: AuthComponent, data: { mode: 'signup' } },
+  {
+    path: 'login',
+    data: { mode: 'login' },
+    loadChildren: () => import('./features/auth/auth.module').then(m => m.AuthModule)
+  },
+  {
+    path: 'signup',
+    data: { mode: 'signup' },
+    loadChildren: () => import('./features/auth/auth.module').then(m => m.AuthModule)
+  },
   { path: 'bootstrap-training', component: BootstrapComponent },
   { path: 'html-training', component: HtmlComponent },
   { path: 'aws-training', component: AwsComponent },

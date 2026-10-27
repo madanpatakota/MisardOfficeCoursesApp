@@ -1,14 +1,16 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { ToastrModule } from 'ngx-toastr';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HttpClientModule } from '@angular/common/http';
-import { ToastrModule } from 'ngx-toastr';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CoreModule } from './core/core.module';
-import { AuthComponent } from './features/auth/auth.component';
+import { SharedModule } from './shared/shared.module';
+
 import { ArticlesComponent } from './features/articles/articles.component';
 import { AngularArticlesComponent } from './features/articles/angular-articles/angular-articles.component';
 import { AwsComponent } from './features/articles/aws/aws.component';
@@ -23,11 +25,10 @@ import { HomeComponent } from './features/home/home.component';
 import { InterviewsComponent } from './features/interview-prep/interviews/interviews.component';
 import { MeetYourMentorsComponent } from './features/meet-your-mentors/meet-your-mentors.component';
 import { ProjectsComponent } from './features/projects/projects.component';
-import { SharedModule } from './shared/shared.module';
+
 @NgModule({
   declarations: [
     AppComponent,
-    AuthComponent,
     HtmlComponent,
     BootstrapComponent,
     CoursesComponent,
@@ -52,10 +53,9 @@ import { SharedModule } from './shared/shared.module';
     ReactiveFormsModule,
     HttpClientModule,
     ToastrModule.forRoot(),
-    BrowserAnimationsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
-  bootstrap:[AppComponent]
-  
+  bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
